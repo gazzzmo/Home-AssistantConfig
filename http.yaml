@@ -1,0 +1,9 @@
+api_password: !secret api_password
+base_url: remote.howells.online
+server_port: 8123
+ssl_certificate: c:\homeassistant\cert\certificate.pem
+ssl_key: c:\homeassistant\cert\privatekey.pem
+trusted_networks:
+  - 192.168.1.0/24
+ip_ban_enabled: True
+login_attempts_threshold: 5  

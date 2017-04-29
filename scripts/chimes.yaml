@@ -1,0 +1,14 @@
+alias: Sonos Chimes
+sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.sonos_lounge
+      media_content_id: https://remote.howells.online/local/4_ding_chimes.wav
+      media_content_type: audio/wav
+  - delay: 
+      seconds: 3
+  - service: tts.google_say
+    data_template:
+      entity_id: media_player.sonos_lounge
+      message: >
+        Hi. I just wanted to remind you that the rubbish bins need to be put out tonight. Thanks!

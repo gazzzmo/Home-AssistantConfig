@@ -1,0 +1,47 @@
+# Platform Configurations
+homeassistant:
+  name: "Home"
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: Australia/Brisbane
+  customize: !include customize.yaml
+
+# Enable These Components
+config:
+conversation:
+discovery:
+frontend:
+history:
+logbook:
+logger:
+  default: warn
+recorder:
+sun:
+updater:
+#influxdb:
+ios:
+wemo:
+
+# Includes These Configurations
+automation: !include automation.yaml
+binary_sensor: !include binary_sensors.yaml
+camera: !include cameras.yaml
+device_tracker: !include devicetrackers.yaml
+group: !include groups.yaml
+http: !include http.yaml
+input_boolean: !include inputboolean.yaml
+#input_select: !include inputselect.yaml 
+light: !include lights.yaml
+media_player: !include mediaplayers.yaml
+#mqtt: !include mqtt.yaml
+notify: !include notify.yaml
+remote: !include remote.yaml
+scene: !include scenes.yaml
+script: !include_dir_named scripts
+sensor: !include sensors.yaml
+switch: !include switches.yaml
+tts: !include tts.yaml
+zone: !include zones.yaml
+weblink: !include weblinks.yaml

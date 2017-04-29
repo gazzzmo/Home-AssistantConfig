@@ -1,0 +1,6 @@
+alias: "Watch Foxtel"
+sequence:
+  - service: remote.turn_on
+    data:
+      entity_id: remote.media_room
+      activity: "Watch Foxtel"

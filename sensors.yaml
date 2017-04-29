@@ -1,0 +1,65 @@
+- platform: time_date
+  display_options:
+    - 'date'
+    - 'time'
+
+- platform: template
+  sensors:
+    solar_angle:
+      value_template: '{{ states.sun.sun.attributes.elevation }}'
+      friendly_name: 'Sun angle'
+      unit_of_measurement: 'degrees'
+    harmonyhub_mediaroom:
+      friendly_name: "Current Activity"
+      value_template: '{{ states.remote.media_room.attributes.current_activity }}'
+      
+- platform: speedtest
+  server_id: 8847
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+ 
+- platform: systemmonitor
+  entity_namespace: systemmonitor
+  resources:
+    - type: disk_use_percent
+      arg: /
+    - type: memory_free
+    - type: processor_use
+
+- platform: plex
+  host: 192.168.1.10
+  username: !secret plex_username
+  password: !secret plex_password
+   
+- platform: bom
+  zone_id: IDQ60801
+  wmo_id: 94575
+  monitored_conditions:
+    - name
+    - cloud
+    - air_temp
+    - press
+    - rain_trace
+    - rel_hum
+    - vis_km
+    - wind_dir
+    - wind_spd_kmh
+    
+- platform: darksky
+  entity_namespace: darksky
+  api_key: !secret darksky_api_key
+  name: "Forecast"
+  update_interval: "00:15"
+  monitored_conditions:
+    - summary
+    - daily_summary
+    - hourly_summary
+    - temperature_min
+    - temperature_max
+
+- platform: google_travel_time
+  api_key: !secret google_maps_api_key
+  origin: zone.home
+  destination: zone.kca

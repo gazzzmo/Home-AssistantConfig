@@ -1,0 +1,18 @@
+- platform: foscam
+  ip: 192.168.1.49
+  username: !secret camera_username
+  password:  !secret camera_password
+  entity_namespace: foscam
+  name: "Garage"
+  
+- platform: foscam 
+  ip: 192.168.1.59
+  username: !secret camera_username
+  password:  !secret camera_password
+  entity_namespace: foscam
+  name: "Lounge"
+
+- platform: generic
+  still_image_url: http://www.bom.gov.au//radar/IDR663.gif
+  entity_namespace: generic
+  name: "Brisbane Weather Radar"

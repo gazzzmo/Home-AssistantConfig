@@ -1,0 +1,7 @@
+#Notify Script for testing
+notify:
+  alias: "Notify Script"
+  sequence:
+    - service: notify.notify
+      data:
+        message: Someone ran the script!

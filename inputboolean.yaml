@@ -1,0 +1,5 @@
+# input boolean for notify switch
+notify_switch:
+  name: Notify
+  initial: off
+  icon: mdi:message-alert

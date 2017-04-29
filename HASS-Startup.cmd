@@ -1,0 +1,1 @@
+C:\Python36\Scripts\Hass.exe -c C:\homeassistant

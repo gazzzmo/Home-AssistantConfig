@@ -1,0 +1,7 @@
+alias: Morning Weather
+sequence:
+  - service: tts.google_say
+    data_template:
+      entity_id: media_player.lounge_sonos
+      message: >
+        Good morning Mandy. It's currently {{states.sensor.forecast_summary.state}} and {{states.sensor.bom_air_temp_c.state|round}} degrees. Today's forecast is {{states.sensor.forecast_hourly_summary.state|replace(".", "")}}, with a high of {{states.sensor.forecast_daily_high_temperature.state|round}} degrees. Your current driving time to KCA is {{states.sensor.google_travel_time__driving.state}} minutes. Have a great day!  

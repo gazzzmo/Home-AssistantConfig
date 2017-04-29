@@ -1,0 +1,26 @@
+# Pushbullet Notifications
+- platform: pushbullet
+  name: pushbullet
+  api_key: !secret pushbullet_api_key
+
+# Twitter Notifications (@ghowells67)
+- platform: twitter
+  name: twitter
+  consumer_key: !secret twitter_consumer_key
+  consumer_secret: !secret twitter_consumer_secret
+  access_token: !secret twitter_access_token
+  access_token_secret: !secret twitter_access_token_secret
+  
+# Telstra SMS API Notifications  
+- platform: telstra
+  name: telstra-sms
+  consumer_key: !secret telstra_consumer_key
+  consumer_secret: !secret telstra_consumer_secret
+  phone_number: !secret mobile_number_gareth
+
+# Telegram Notifications
+- platform: telegram
+  name: telegram
+  api_key: !secret telegram_api_key
+  chat_id: !secret telegram_chat_id
+  
