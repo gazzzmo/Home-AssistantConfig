@@ -1,5 +1,5 @@
 api_password: !secret api_password
-base_url: remote.howells.online
+base_url: !secret base_url
 server_port: 8123
 ssl_certificate: c:\homeassistant\cert\certificate.pem
 ssl_key: c:\homeassistant\cert\privatekey.pem
