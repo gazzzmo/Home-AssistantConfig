@@ -1,4 +1,4 @@
-alias: Sonos Chimes
+alias: Bin Day Reminder
 sequence:
   - service: media_player.play_media
     data:
