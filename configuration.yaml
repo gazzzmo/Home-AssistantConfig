@@ -25,7 +25,7 @@ ios:
 wemo:
 
 # Includes These Configurations
-automation: !include automation.yaml
+automation: !include_dir_list automations
 binary_sensor: !include binary_sensors.yaml
 camera: !include cameras.yaml
 device_tracker: !include devicetrackers.yaml
