@@ -22,4 +22,4 @@ components <https://home-assistant.io/developers/creating_components/>`__.
 If you run into issues while using Home Assistant or during development
 of a component, check the `Home Assistant help section <https://home-assistant.io/help/>`__ of the website for further help and information.
 
-|Join the chat at https://gitter.im/home-assistant/home-assistant|
+You can also join the chat at https://gitter.im/home-assistant/home-assistant
