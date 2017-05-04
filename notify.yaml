@@ -25,7 +25,7 @@
   chat_id: !secret telegram_chat_id
 
 # HTML5 Push Notifications
-#- platform: html5
-#  name: HTML5
-#  gcm_api_key: !secret gcm_api_key
-#  gcm_sender_id: !secret gcm_sender_id
+- platform: html5
+  name: HTML5
+  gcm_api_key: !secret gcm_api_key
+  gcm_sender_id: !secret gcm_sender_id
