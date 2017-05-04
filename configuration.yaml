@@ -23,6 +23,7 @@ updater:
 #influxdb:
 ios:
 wemo:
+emulated_hue:
 
 # Includes These Configurations
 automation: !include_dir_list automations
