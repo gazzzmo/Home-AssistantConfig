@@ -1,2 +1,2 @@
-- platform: lifx_legacy
-  broadcast: 192.168.1.255
+- platform: lifx
+
