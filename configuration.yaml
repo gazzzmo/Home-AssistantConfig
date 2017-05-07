@@ -34,10 +34,10 @@ camera: !include_dir_merge_list cameras
 device_tracker: !include_dir_merge_list device_trackers
 group: !include groups.yaml
 http: !include http.yaml
-input_boolean: !include inputboolean.yaml
+#input_boolean: !include inputboolean.yaml
 #input_select: !include inputselect.yaml 
 light: !include lights.yaml
-media_player: !include mediaplayers.yaml
+media_player: !include_dir_merge_list media_players
 #mqtt: !include mqtt.yaml
 notify: !include notify.yaml
 remote: !include remote.yaml
