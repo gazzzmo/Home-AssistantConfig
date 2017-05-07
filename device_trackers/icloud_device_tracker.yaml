@@ -1,0 +1,4 @@
+# iCloud Device Tracker
+- platform: icloud
+  username: !secret icloud_username
+  password: !secret icloud_password

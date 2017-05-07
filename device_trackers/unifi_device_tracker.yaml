@@ -1,0 +1,6 @@
+# Ubiquiti Unifi Device Tracker
+- platform: unifi
+  host: 192.168.1.2
+  username: !secret router_username
+  password: !secret router_password
+  verify_ssl: False

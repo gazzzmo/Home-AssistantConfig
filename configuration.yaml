@@ -29,9 +29,9 @@ zwave:
   config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
 
 # Includes These Configurations
-automation: !include_dir_list automations
+automation: !include_dir_merge_list automations
 camera: !include_dir_merge_list cameras
-device_tracker: !include devicetrackers.yaml
+device_tracker: !include_dir_merge_list device_trackers
 group: !include groups.yaml
 http: !include http.yaml
 input_boolean: !include inputboolean.yaml
