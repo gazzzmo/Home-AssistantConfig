@@ -1,0 +1,4 @@
+- platform: generic
+  still_image_url: http://www.bom.gov.au//radar/IDR663.gif
+  entity_namespace: generic
+  name: "Brisbane Weather Radar"

@@ -30,8 +30,7 @@ zwave:
 
 # Includes These Configurations
 automation: !include_dir_list automations
-binary_sensor: !include binary_sensors.yaml
-camera: !include cameras.yaml
+camera: !include_dir_merge_list cameras
 device_tracker: !include devicetrackers.yaml
 group: !include groups.yaml
 http: !include http.yaml
