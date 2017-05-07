@@ -1,13 +1,13 @@
-alias: "Notify My Phone Battery Level"
-trigger:
-  platform: numeric_state
-  entity_id: sensor.gareth_iphone_battery_level
-  below: 30
-condition:
-  condition: state
-  entity_id: sensor.gareth_iphone_battery_state
-  state: Unplugged
-action:
-  service: notify.telstrasms
-  data:
-    message: Hey Gareth. Your phone battery is getting low. It's currently {{ states("sensor.gareth_iphone_battery_level") }}%. Time to charge up!
+- alias: "Notify My Phone Battery Level"
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.gareth_iphone_battery_level
+    below: 30
+  condition:
+    condition: state
+    entity_id: sensor.gareth_iphone_battery_state
+    state: Unplugged
+  action:
+    service: notify.telstrasms
+    data:
+      message: Hey Gareth. Your phone battery is getting low. It's currently {{ states("sensor.gareth_iphone_battery_level") }}%. Time to charge up!

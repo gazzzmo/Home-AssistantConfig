@@ -1,8 +1,8 @@
-alias: "Lights On At Sunset"
-trigger:
-  platform: sun
-  event: sunset
-  offset: '-00:15:00'
-action:
-  service: scene.turn_on
-  entity_id: scene.cozy_warm_evenings
+- alias: "Lights On At Sunset"
+  trigger:
+    platform: sun
+    event: sunset
+    offset: '-00:15:00'
+  action:
+    service: scene.turn_on
+    entity_id: scene.cozy_warm_evenings

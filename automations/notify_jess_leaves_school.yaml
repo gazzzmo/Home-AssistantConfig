@@ -1,10 +1,10 @@
-alias: "Notify Jess Leaves School"
-trigger:
-  platform: zone
-  entity_id: device_tracker.jesssiphone
-  zone: zone.school
-  event: leave
-action:
-  service: notify.telstrasms
-  data:
-    message: "Jess just left school"
+- alias: "Notify Jess Leaves School"
+  trigger:
+    platform: zone
+    entity_id: device_tracker.jesssiphone
+    zone: zone.school
+    event: leave
+  action:
+    service: notify.telstrasms
+    data:
+      message: "Jess just left school"

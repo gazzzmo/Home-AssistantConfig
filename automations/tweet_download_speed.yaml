@@ -1,9 +1,9 @@
-alias: "Tweet Download Speed"
-trigger:
-  platform: numeric_state
-  entity_id: sensor.speedtest_download
-  below: '5'
-action:
-  service: notify.twitter
-  data:
-    message: "My download speed on @foxtel ADSL is currently {{ states('sensor.speedtest_download') }} Mbit/s No @nbn_australia in Sunnybank QLD 4109 #NBNFail"
+- alias: "Tweet Download Speed"
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.speedtest_download
+    below: '5'
+  action:
+    service: notify.twitter
+    data:
+      message: "My download speed on @foxtel ADSL is currently {{ states('sensor.speedtest_download') }} Mbit/s No @nbn_australia in Sunnybank QLD 4109 #NBNFail"
