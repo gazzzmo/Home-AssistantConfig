@@ -1,0 +1,6 @@
+# Telstra SMS API Notifications  
+- platform: telstra
+  name: telstra-sms
+  consumer_key: !secret telstra_consumer_key
+  consumer_secret: !secret telstra_consumer_secret
+  phone_number: !secret mobile_number_gareth
