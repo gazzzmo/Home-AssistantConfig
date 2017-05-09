@@ -41,7 +41,7 @@ light: !include_dir_merge_list lights
 media_player: !include_dir_merge_list media_players
 #mqtt: !include mqtt.yaml
 notify: !include_dir_merge_list notifiers
-remote: !include remote.yaml
+remote: !include_dir_merge_list remotes
 scene: !include scenes.yaml
 script: !include_dir_named scripts
 sensor: !include sensors.yaml
