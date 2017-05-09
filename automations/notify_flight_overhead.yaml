@@ -1,0 +1,9 @@
+- alias: "Notify Flight Overhead"
+  trigger:
+    platform: event
+    event_type: opensky_entry
+  action:
+    - service: notify.ios_garethiphone
+      data_template:
+        message: >
+          Flight {{ trigger.event.data.data["callsign"] }} is overhead!

@@ -1,0 +1,2 @@
+- platform: lifx
+  entity_namespace: lifx

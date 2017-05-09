@@ -15,6 +15,7 @@ discovery:
 frontend:
 history:
 logbook:
+# Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 logger:
   default: warn
 recorder:
@@ -33,10 +34,10 @@ automation: !include_dir_merge_list automations
 camera: !include_dir_merge_list cameras
 device_tracker: !include_dir_merge_list device_trackers
 group: !include groups.yaml
-http: !include http.yaml
+http: !include ./http/http.yaml
 #input_boolean: !include inputboolean.yaml
 #input_select: !include inputselect.yaml 
-light: !include lights.yaml
+light: !include_dir_merge_list lights
 media_player: !include_dir_merge_list media_players
 #mqtt: !include mqtt.yaml
 notify: !include notify.yaml

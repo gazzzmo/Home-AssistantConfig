@@ -65,5 +65,5 @@
   destination: zone.kca
 
 - platform: opensky
-  radius: 100
+  radius: 25
 
