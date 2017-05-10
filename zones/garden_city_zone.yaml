@@ -1,0 +1,5 @@
+- name: Garden City
+  latitude: !secret garden_city_lat
+  longitude: !secret garden_city_long
+  radius: 500
+  icon: mdi:shopping  

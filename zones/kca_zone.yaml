@@ -1,0 +1,5 @@
+- name: KCA
+  latitude: !secret kca_lat
+  longitude: !secret kca_long
+  radius: 250
+  icon: mdi:factory

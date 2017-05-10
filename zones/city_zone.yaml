@@ -1,0 +1,5 @@
+- name: City
+  latitude: !secret city_lat
+  longitude: !secret city_long
+  radius: 1000
+  icon: mdi:city

@@ -44,8 +44,8 @@ notify: !include_dir_merge_list notifiers
 remote: !include_dir_merge_list remotes
 scene: !include_dir_merge_list scenes
 script: !include_dir_named scripts
-sensor: !include sensors.yaml
-switch: !include switches.yaml
-tts: !include tts.yaml
+sensor: !include_dir_merge_list sensors
+switch: !include_dir_merge_list switches
+tts: !include_dir_merge_list tts
 zone: !include zones.yaml
 weblink: !include weblinks.yaml

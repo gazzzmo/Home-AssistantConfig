@@ -1,0 +1,9 @@
+- platform: template
+  sensors:
+    solar_angle:
+      value_template: '{{ states.sun.sun.attributes.elevation }}'
+      friendly_name: 'Sun angle'
+      unit_of_measurement: 'degrees'
+    harmonyhub_mediaroom:
+      friendly_name: "Current Activity"
+      value_template: '{{ states.remote.media_room.attributes.current_activity }}'
