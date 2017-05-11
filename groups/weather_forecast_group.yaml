@@ -1,0 +1,9 @@
+  weather_forecast:
+    name: "Weather Forecast"
+    view: no
+    entities:
+      - sensor.darksky_forecast_daily_low_temperature
+      - sensor.darksky_forecast_daily_high_temperature
+      - sensor.darksky_forecast_summary
+      - sensor.darksky_forecast_hourly_summary
+      - sensor.darksky_forecast_daily_summary

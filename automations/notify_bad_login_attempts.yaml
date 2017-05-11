@@ -1,0 +1,12 @@
+#  Uses IFTTT to notify me of bad logins.
+
+- alias: Login Failure
+  hide_entity: True
+  trigger:
+    platform: template
+    value_template: "{{ states('persistent_notification.httplogin') != 'unknown' }}"
+
+  action:
+    service: notify.ios_garethiphone
+    data:
+      message: "HASS Login Failures detected!"

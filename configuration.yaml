@@ -33,7 +33,7 @@ zwave:
 automation: !include_dir_merge_list automations
 camera: !include_dir_merge_list cameras
 device_tracker: !include_dir_merge_list device_trackers
-group: !include groups.yaml
+group: !include_dir_merge_named groups
 http: !include ./http/http.yaml
 #input_boolean: !include inputboolean.yaml
 #input_select: !include inputselect.yaml 
@@ -47,5 +47,5 @@ script: !include_dir_named scripts
 sensor: !include_dir_merge_list sensors
 switch: !include_dir_merge_list switches
 tts: !include_dir_merge_list tts
-zone: !include zones.yaml
-weblink: !include weblinks.yaml
+zone: !include_dir_merge_list zones
+weblink: !include ./weblinks/weblinks.yaml

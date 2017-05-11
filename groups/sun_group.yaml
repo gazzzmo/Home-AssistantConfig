@@ -1,0 +1,6 @@
+  sun:
+    name: Sun
+    view: no
+    entities:
+      - sun.sun
+      - sensor.solar_angle

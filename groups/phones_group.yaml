@@ -1,0 +1,10 @@
+  phones:
+    name: "Phones"
+    view: no
+    entities:
+      - device_tracker.garethiphone
+      - sensor.gareth_iphone_battery_level
+      - sensor.gareth_iphone_battery_state
+      - device_tracker.mandysiphone
+      - device_tracker.timsiphone
+      - device_tracker.jessicasiphone

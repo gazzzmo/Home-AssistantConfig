@@ -1,0 +1,7 @@
+  server:
+    name: "Server"
+    view: no
+    entities:
+      - sensor.systemmonitor_cpu_use
+      - sensor.systemmonitor_disk_use_
+      - sensor.systemmonitor_ram_free

@@ -1,0 +1,13 @@
+  weather_observations:
+    name: "Weather Observations"
+    view: no
+    entities:
+      - sensor.bom_station_name
+      - sensor.bom_air_temp_c
+      - sensor.bom_cloud
+      - sensor.bom_pressure_mb
+      - sensor.bom_rain_today
+      - sensor.bom_relative_humidity
+      - sensor.bom_visability_km
+      - sensor.bom_wind_direction
+      - sensor.bom_wind_speed_kmh

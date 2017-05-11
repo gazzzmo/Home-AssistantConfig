@@ -1,0 +1,6 @@
+  date_time:
+    name: "Date Time"
+    view: no
+    entities:
+      - sensor.date
+      - sensor.time
