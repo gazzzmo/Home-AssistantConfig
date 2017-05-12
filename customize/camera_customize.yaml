@@ -1,0 +1,4 @@
+    camera.foscam_garage:
+      friendly_name: Garage Camera
+    camera.foscam_lounge:
+      friendly_name: Lounge Camera      

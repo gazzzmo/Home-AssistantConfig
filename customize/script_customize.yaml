@@ -1,0 +1,8 @@
+    script.watchfoxtel:
+      icon: mdi:movie
+    script.playxbox:
+      icon: mdi:xbox
+    script.watchchromecast:
+      icon: mdi:cast
+    script.watchdvd:
+      icon: mdi:disk

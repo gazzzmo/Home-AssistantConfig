@@ -1,0 +1,16 @@
+    media_player.garage:
+      friendly_name: Garage Sonos
+    media_player.office:
+      friendly_name: Office Sonos
+    media_player.lounge:
+      friendly_name: Lounge Sonos
+    media_player.cast_living_room:
+      friendly_name: Lounge Chromecast
+    media_player.cast_media_room:
+      friendly_name: Media Room Chromecast
+    media_player.sonos_garage:
+      friendly_name: Garage Sonos
+    media_player.sonos_lounge:
+      friendly_name: Lounge Sonos
+    media_player.sonos_office:
+      friendly_name: Office Sonos

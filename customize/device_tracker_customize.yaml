@@ -1,0 +1,16 @@
+    device_tracker.garethiphone:
+      friendly_name: Gareth
+      hidden: false
+      entity_picture: /local/gareth.png
+    device_tracker.mandysiphone:
+      entity_picture: /local/mandy.png
+      icon: mdi:apple
+      friendly_name: Mandy
+    device_tracker.timsiphone:
+      entity_picture: /local/tim.png
+      icon: mdi:apple
+      friendly_name: Tim
+    device_tracker.jessicasiphone:
+      entity_picture: /local/jess.png
+      hidden: false
+      friendly_name: Jess

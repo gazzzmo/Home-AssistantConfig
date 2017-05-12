@@ -1,0 +1,15 @@
+    sensor.forecast_daily_low_temperature:
+      friendly_name: Min Temp
+      icon: mdi:temperature-celsius
+    sensor.forecast_daily_high_temperature:
+      friendly_name: Max Temp
+      icon: mdi:temperature-celsius
+    sensor.forecast_hourly_summary:
+      friendly_name: Today
+      icon: mdi:newspaper
+    sensor.forecast_daily_summary:
+      friendly_name: Ahead
+      icon: mdi:newspaper
+    sensor.forecast_summary:
+      friendly_name: Summary
+      icon: mdi:newspaper

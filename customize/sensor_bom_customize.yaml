@@ -1,0 +1,28 @@
+    sensor.bom_station_name:
+      icon: mdi:map-marker
+      friendly_name: Station
+      hidden: true
+    sensor.bom_air_temp_c:
+      icon: mdi:temperature-celsius
+      friendly_name: Temperature
+    sensor.bom_cloud:
+      icon: mdi:cloud
+      friendly_name: Cloud
+    sensor.bom_pressure_mb:
+      icon: mdi:triangle
+      friendly_name: Pressure
+    sensor.bom_rain_today:
+      icon: mdi:weather-rainy
+      friendly_name: Rain
+    sensor.bom_relative_humidity:
+      icon: mdi:water-percent
+      friendly_name: Humidity
+    sensor.bom_visability_km:
+      icon: mdi:binoculars
+      friendly_name: Visability
+    sensor.bom_wind_direction:
+      icon: mdi:compass
+      friendly_name: Wind Direction
+    sensor.bom_wind_speed_kmh:
+      icon: mdi:speedometer
+      friendly_name: Wind Speed
