@@ -1,0 +1,2 @@
+- platform: hue
+  entity_namespace: hue

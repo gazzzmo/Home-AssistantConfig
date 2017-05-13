@@ -1,4 +1,7 @@
 # Z-Wave Sensor Customizations
+    binary_sensor.aeotec_zw100_multisensor_6_sensor_4_0:
+      friendly name: Sensor
+      icon: mdi:switch
     sensor.aeotec_zw100_multisensor_6_alarm_level_4_1:
       friendly_name: Alarm Level
       icon: mdi:alarm-light
@@ -19,7 +22,13 @@
       icon: mdi:network
     sensor.aeotec_zw100_multisensor_6_temperature_4_1:
       friendly_name: Temperature
-      icon: mdi:temperature-celcius
+      icon: mdi:thermometer
     sensor.aeotec_zw100_multisensor_6_ultraviolet_4_27:
       friendly_name: Ultraviolet
       icon: mdi:lightbulb
+    zwave.aeotec_zw090_zstick_gen5_au_1:
+      friendly_name: Z-Stick
+      hidden: true
+    zwave.aeotec_zw100_multisensor_6_4:
+      friendly_name: Media Room Multisensor
+      hidden: true
