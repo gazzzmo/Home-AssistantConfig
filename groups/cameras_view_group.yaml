@@ -1,0 +1,6 @@
+  cameras:
+    name: "Cameras"
+    view: yes
+    entities:
+      - camera.foscam_garage
+      - camera.foscam_lounge

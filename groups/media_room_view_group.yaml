@@ -1,0 +1,6 @@
+  mediaroom:
+    name: "Media Room"
+    view: yes
+    entities:
+      - group.media_room_sensor
+      - group.mediaroom_harmonyhub

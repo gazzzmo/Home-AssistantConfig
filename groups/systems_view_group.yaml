@@ -1,0 +1,7 @@
+  systems:
+    name: "Systems"
+    view: yes
+    entities:
+      - group.server
+      - group.speedtest
+      
