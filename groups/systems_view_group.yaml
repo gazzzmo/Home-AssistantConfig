@@ -4,4 +4,4 @@
     entities:
       - group.server
       - group.speedtest
-      
+      - group.weblinks

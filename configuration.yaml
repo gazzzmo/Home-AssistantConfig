@@ -24,7 +24,6 @@ sun:
 updater:
 ios:
 wemo:
-emulated_hue:
 zwave:
   usb_path: /dev/ttyACM0
   config_path: /srv/homeassistant/src/python-openzwave/openzwave/config

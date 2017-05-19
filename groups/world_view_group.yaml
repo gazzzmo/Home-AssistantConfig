@@ -1,0 +1,9 @@
+  world:
+    name: "World"
+    view: yes
+    entities:
+      - group.date_time
+      - group.sun
+      - group.weather_forecast
+      - group.weather_observations
+      

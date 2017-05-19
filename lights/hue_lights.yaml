@@ -1,2 +1,4 @@
 - platform: hue
   entity_namespace: hue
+  allow_hue_groups: false
+  

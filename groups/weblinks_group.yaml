@@ -1,0 +1,11 @@
+  weblinks:
+    name: "Weblinks"
+    view: no
+    entities:
+    - weblink.home_assistant_code
+    - weblink.home_assistant_community
+    - weblink.home_assistant_components
+    - weblink.home_assistant_website
+    - weblink.plex_media_server
+    - weblink.router
+    
