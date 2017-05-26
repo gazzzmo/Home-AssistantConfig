@@ -1,0 +1,30 @@
+    group.cameras:
+      homebridge_hidden: true
+    group.date_time:
+      homebridge_hidden: true
+    group.family:
+      homebridge_hidden: true
+    group.media_room_sensor:
+      homebridge_hidden: false
+    group.mediaroom:
+      homebridge_hidden: false
+    group.mediaroom_harmonyhub:
+      homebridge_hidden: false
+    group.phones:
+      homebridge_hidden: true
+    group.server:
+      homebridge_hidden: true
+    group.speedtest:
+      homebridge_hidden: true
+    group.sun:
+       homebridge_hidden: true
+    group.systems:
+      homebridge_hidden: true
+    group.weather_forecast:
+      homebridge_hidden: true
+    group.weather_observations:
+      homebridge_hidden: true
+    group.weblinks:
+      homebridge_hidden: true
+    group.world:
+      homebridge_hidden: true

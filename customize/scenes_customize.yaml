@@ -1,0 +1,10 @@
+    scene.daylight:
+      homebridge_hidden: true    
+    scene.everybodys_different:
+      homebridge_hidden: true    
+    scene.im_feeling_blue:
+      homebridge_hidden: true    
+    scene.purple_rain:
+      homebridge_hidden: true    
+    scene.warm_cosy_nights:
+      homebridge_hidden: true    

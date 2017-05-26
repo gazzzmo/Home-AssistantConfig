@@ -1,0 +1,5 @@
+family:
+  entities:
+  - group.all_devices
+  name: Family
+  view: true

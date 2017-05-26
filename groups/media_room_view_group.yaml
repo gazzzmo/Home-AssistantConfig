@@ -4,4 +4,5 @@
     entities:
       - light.lifx_media_room
       - group.media_room_sensor
+      - switch.tv
       - group.mediaroom_harmonyhub

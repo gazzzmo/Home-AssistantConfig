@@ -1,2 +1,2 @@
-- platform: opensky
-  radius: 25
+#- platform: opensky
+#  radius: 25
