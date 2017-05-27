@@ -17,12 +17,17 @@ history:
 logbook:
 # Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 logger:
-  default: warn
+  default: error
 mqtt:
 recorder:
 sun:
 updater:
 ios:
+telegram_bot:
+  platform: polling
+  api_key: !secret telegram_api_key
+  allowed_chat_ids:
+    - !secret telegram_chat_id
 wemo:
 zwave:
   usb_path: /dev/ttyACM0
