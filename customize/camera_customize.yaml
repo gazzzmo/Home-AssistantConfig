@@ -1,4 +1,7 @@
     camera.foscam_garage:
       friendly_name: Garage Camera
     camera.foscam_lounge:
-      friendly_name: Lounge Camera      
+      friendly_name: Lounge Camera  
+    camera.snapshot_garage:
+      friendly_name: Garage Snapshot
+      hidden: true    

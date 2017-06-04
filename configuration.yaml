@@ -22,7 +22,7 @@ mqtt:
 recorder:
 sun:
 updater:
-ios:
+ios: !include ./ios/ios.yaml
 telegram_bot:
   platform: polling
   api_key: !secret telegram_api_key

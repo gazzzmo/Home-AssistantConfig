@@ -2,10 +2,16 @@
   trigger:
     platform: sun
     event: sunset
-    offset: "-01:00:00"
+    offset: "-00:15:00"
   condition:
     condition: state
     entity_id: group.all_devices
     state: 'home'
   action:
-    service: light.turn_on
+    - service: light.turn_on
+    - service: notify.notify
+        data_template:
+          message: "Motion detected in the Living Room!"
+          data:
+            push:
+              sound: "US-EN-Morgan-Freeman-Turning-On-The-Lights.wav"

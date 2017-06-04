@@ -5,6 +5,6 @@
     zone: zone.school
     event: leave
   action:
-    service: notify.telstrasms
+    service: notify.notify
     data:
       message: "Jess just left school"

@@ -8,6 +8,6 @@
     entity_id: sensor.gareth_iphone_battery_state
     state: Unplugged
   action:
-    service: notify.telstrasms
+    service: notify.notify
     data:
       message: Hey Gareth. Your phone battery is getting low. It's currently {{ states("sensor.gareth_iphone_battery_level") }}%. Time to charge up!

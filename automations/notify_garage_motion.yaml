@@ -1,0 +1,20 @@
+- alias: "Notify Garage Motion"
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.blue_iris_garage
+      from: "off"
+      to: "on"
+  condition:
+    condition: state
+    entity_id: group.all_devices
+    state: "home"
+  action:
+    service: notify.notify
+    data_template:
+      message: "Motion detected in the Garage!"
+      data:
+        attachment:
+          url: !secret garage_camera_url
+          content-type: gif
+        push:
+          sound: "US-EN-Morgan-Freeman-Motion-In-Garage.wav"

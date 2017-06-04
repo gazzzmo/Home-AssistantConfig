@@ -3,7 +3,7 @@
     platform: state
     entity_id: updater.updater
   action:
-    - service: notify.telstrasms
+    - service: notify.notify
       data:
         message: 'Update for Home Assistant is available.'
     - service: notify.notify

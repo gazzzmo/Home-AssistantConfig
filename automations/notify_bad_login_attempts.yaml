@@ -7,6 +7,6 @@
     value_template: "{{ states('persistent_notification.httplogin') != 'unknown' }}"
 
   action:
-    service: notify.ios_garethiphone
+    service: notify.notify
     data:
       message: "HASS Login Failures detected!"
