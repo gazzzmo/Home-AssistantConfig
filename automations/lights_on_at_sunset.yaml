@@ -10,8 +10,8 @@
   action:
     - service: light.turn_on
     - service: notify.notify
-        data_template:
-          message: "Motion detected in the Living Room!"
-          data:
-            push:
-              sound: "US-EN-Morgan-Freeman-Turning-On-The-Lights.wav"
+      data_template:
+        message: "Motion detected in the Living Room!"
+        data:
+          push:
+            sound: "US-EN-Morgan-Freeman-Turning-On-The-Lights.wav"
