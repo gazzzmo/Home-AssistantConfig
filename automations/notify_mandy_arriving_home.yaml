@@ -1,0 +1,12 @@
+- alias: "Notify Mandy Arriving Home"
+  trigger:
+    - platform: state
+      entity_id: device_tracker.mandysiphone
+      to: "home"
+  action:
+    service: notify.notify
+    data_template:
+      message: "Mandy is arriving home."
+      data:
+        push:
+          sound: "US-EN-Morgan-Freeman-Wife-Is-Arriving.wav"

@@ -11,7 +11,7 @@
     - service: light.turn_on
     - service: notify.notify
       data_template:
-        message: "Motion detected in the Living Room!"
+        message: "Turning on the lights."
         data:
           push:
             sound: "US-EN-Morgan-Freeman-Turning-On-The-Lights.wav"
