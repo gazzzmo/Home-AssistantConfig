@@ -18,7 +18,7 @@ history:
 logbook:
 # Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 logger:
-  default: info
+  default: warn
 mqtt:
 recorder:
 sun:
@@ -32,7 +32,7 @@ telegram_bot:
 wemo:
 zwave:
   usb_path: /dev/ttyACM0
-  config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
+#  config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
 
 # Includes These Configurations
 automation: !include_dir_merge_list automations
