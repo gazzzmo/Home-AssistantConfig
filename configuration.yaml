@@ -13,7 +13,7 @@ config:
 conversation:
 discovery:
 frontend:
-hassio:
+# hassio:
 history:
 logbook:
 # Log Severities: notset, debug, info, warn, warning, error, fatal, critical
