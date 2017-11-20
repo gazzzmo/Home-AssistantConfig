@@ -1,6 +1,3 @@
-- platform: foscam 
-  ip: 192.168.1.59
-  username: !secret camera_username
-  password:  !secret camera_password
-  entity_namespace: foscam
-  name: "Lounge"
+- platform: mjpeg 
+  name: "Lounge Camera"
+  mjpeg_url: !secret lounge_camera_url
