@@ -14,7 +14,7 @@
       message: "Motion detected in the Living Room!"
       data:
         attachment:
-          url: !secret mediaroom_image_url
+          url: !secret lounge_image_url
           content-type: gif
         push:
           sound: "US-EN-Morgan-Freeman-Motion-In-Living-Room.wav"
