@@ -1,0 +1,3 @@
+- platform: mjpeg 
+  name: "Mediaroom Camera"
+  mjpeg_url: !secret mediaroom_camera_url
