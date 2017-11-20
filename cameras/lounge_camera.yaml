@@ -1,3 +1,4 @@
 - platform: mjpeg 
   name: "Lounge Camera"
   mjpeg_url: !secret lounge_camera_url
+  still_image_url: !secret lounge_image_url
