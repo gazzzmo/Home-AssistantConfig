@@ -1,0 +1,6 @@
+  device_tracker_view:
+    name: Known Devices
+    view: yes
+    icon: mdi:wifi
+    entities:
+    - group.all_devices

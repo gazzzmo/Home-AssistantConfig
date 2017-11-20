@@ -28,3 +28,5 @@
       homebridge_hidden: true
     group.world:
       homebridge_hidden: true
+    group.all_devices:
+      hidden: false
