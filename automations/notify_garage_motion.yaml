@@ -6,7 +6,7 @@
       to: "on"
   condition:
     condition: state
-    entity_id: group.all_devices
+    entity_id: group.phones
     state: "not_home"
   action:
     service: notify.notify
@@ -14,7 +14,7 @@
       message: "Motion detected in the Garage!"
       data:
         attachment:
-          url: !secret garage_camera_url
+          url: !secret garage_image_url
           content-type: gif
         push:
           sound: "US-EN-Morgan-Freeman-Motion-In-Garage.wav"
