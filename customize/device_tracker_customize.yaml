@@ -2,7 +2,7 @@
       friendly_name: Gareth
       hidden: false
       entity_picture: /local/gareth.png
-    device_tracker.mandysiphone:
+    device_tracker.mandyiphone:
       entity_picture: /local/mandy.png
       icon: mdi:apple
       friendly_name: Mandy
