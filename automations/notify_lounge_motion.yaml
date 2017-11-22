@@ -30,8 +30,7 @@
         entity_id: media_player.sonos_lounge
         media_content_id: !secret siren_url
         media_content_type: "MUSIC"
-    - delay: 
-      seconds: 10
+    - delay: 0:0:10
     - service: media_player.sonos_restore
       data_template:
         entity_id: media_player.sonos_lounge
