@@ -20,6 +20,7 @@ logbook:
 logger:
   default: warn
 mqtt:
+    broker: 192.168.1.95
 recorder:
 sun:
 updater:
