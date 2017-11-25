@@ -4,5 +4,5 @@
     entities:
       - device_tracker.garethiphone
       - device_tracker.mandyiphone
-      - device_tracker.timsiphone
+      - device_tracker.timiphone
       - device_tracker.jessicasiphone

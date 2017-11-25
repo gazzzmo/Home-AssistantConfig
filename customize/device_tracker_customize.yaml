@@ -6,7 +6,7 @@
       entity_picture: /local/mandy.png
       icon: mdi:apple
       friendly_name: Mandy
-    device_tracker.timsiphone:
+    device_tracker.timiphone:
       entity_picture: /local/tim.png
       icon: mdi:apple
       friendly_name: Tim
