@@ -1,0 +1,5 @@
+  dnsip:
+    name: "Internet IP Address"
+    view: no
+    entities:
+      - sensor.myipopendnscom
