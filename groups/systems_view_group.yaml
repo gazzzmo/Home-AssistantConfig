@@ -5,3 +5,4 @@
       - group.server
       - group.speedtest
       - group.weblinks
+      - group.certificate

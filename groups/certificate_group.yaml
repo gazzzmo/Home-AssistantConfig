@@ -1,0 +1,5 @@
+  certificate:
+    name: "SSL Certificate"
+    view: no
+    entities:
+      - sensor.ssl_certificate_expiry
