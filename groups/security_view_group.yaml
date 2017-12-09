@@ -1,0 +1,5 @@
+  security:
+    name: "Security"
+    view: yes
+    entities:
+    - group_motion

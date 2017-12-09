@@ -1,4 +1,8 @@
     binary_sensor.blue_iris_garage:
-      friendly_name: Garage Camera Motion
+      friendly_name: Garage Motion
     binary_sensor.blue_iris_lounge:
-      friendly_name: Lounge Camera Motion      
+      friendly_name: Lounge Motion
+    binary_sensor.blue_iris_mediaroom:
+      friendly_name: Media Room Motion
+    binary_sensor.blue_iris_office:
+      friendly_name: Office Motion

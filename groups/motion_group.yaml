@@ -1,0 +1,8 @@
+  motion:
+    name: "Motion"
+    view: no
+    entities:
+    - binary_sensor.blue_iris_garage
+    - binary_sensor.blue_iris_lounge
+    - binary_sensor.blue_iris_mediaroom
+    - binary_sensor.blue_iris_office
