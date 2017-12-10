@@ -2,5 +2,7 @@
     name: "Cameras"
     view: yes
     entities:
-      - camera.foscam_garage
-      - camera.foscam_lounge
+      - camera.garage_camera
+      - camera.lounge_camera
+      - camera.mediaroom_camera
+      - camera.office_camera
