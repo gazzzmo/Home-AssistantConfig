@@ -9,3 +9,4 @@
       - media_player.cast_media_room
       - media_player.cast_media_room_speaker
       - light.lifx_media_room
+      - binary_sensor.blue_iris_mediaroom
