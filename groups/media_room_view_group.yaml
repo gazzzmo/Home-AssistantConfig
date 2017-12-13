@@ -6,3 +6,5 @@
       - group.media_room_sensor
       - switch.tv
       - group.mediaroom_harmonyhub
+      - media_player.cast_media_room
+      - media_player.cast_media_room_speaker
