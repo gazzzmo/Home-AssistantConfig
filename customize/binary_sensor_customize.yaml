@@ -1,8 +1,12 @@
     binary_sensor.blue_iris_garage:
       friendly_name: Garage Motion
+      device_class: motion
     binary_sensor.blue_iris_lounge:
       friendly_name: Lounge Motion
+      device_class: motion
     binary_sensor.blue_iris_mediaroom:
       friendly_name: Media Room Motion
+      device_class: motion
     binary_sensor.blue_iris_office:
       friendly_name: Office Motion
+      device_class: motion
