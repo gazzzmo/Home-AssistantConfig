@@ -14,3 +14,7 @@
       friendly_name: Office Motion
       device_class: motion
       icon: mdi:run
+    binary_sensor.blue_iris_backyard:
+      friendly_name: Backyard Motion
+      device_class: motion
+      icon: mdi:run
