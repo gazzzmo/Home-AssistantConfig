@@ -1,0 +1,3 @@
+- platform: mjpeg 
+  name: "Backyard Camera"
+  mjpeg_url: !secret backyard_camera_url

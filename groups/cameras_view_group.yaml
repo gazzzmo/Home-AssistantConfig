@@ -6,3 +6,4 @@
       - camera.lounge_camera
       - camera.mediaroom_camera
       - camera.office_camera
+      - camera.backyard_camera
