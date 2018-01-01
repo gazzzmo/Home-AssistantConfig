@@ -19,5 +19,8 @@
       device_class: motion
       icon: mdi:run
     binary_sensor.flic_80e4da728fb6:
-      friendly_name: Tim Bed Flic
+      friendly_name: Tim Bedside Flic
+      icon: mdi:arrow-collapse-down
+    binary_sensor.flic_80e4da729bfd:
+      friendly_name: Gareth Bedside Flic
       icon: mdi:arrow-collapse-down
