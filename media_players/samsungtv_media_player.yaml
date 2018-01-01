@@ -1,6 +1,6 @@
 # Samsung TV's
 - platform: samsung
-  host: 192.168.1.204
   name: Lounge TV
+  host: 192.168.1.204
+  port: 8001
   mac: d8-e0-e1-20-90-be
-  
