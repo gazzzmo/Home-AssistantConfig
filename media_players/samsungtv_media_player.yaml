@@ -1,0 +1,6 @@
+# Samsung TV's
+- platform: samsung
+  host: 192.168.1.204
+  name: Lounge TV
+  mac: d8-e0-e1-20-90-be
+  
