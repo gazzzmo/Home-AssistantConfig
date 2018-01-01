@@ -1,5 +1,5 @@
 # Samsung TV's
-- platform: samsung
+- platform: samsungtv
   name: Lounge TV
   host: 192.168.1.204
   port: 8001
