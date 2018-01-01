@@ -46,3 +46,8 @@ switch: !include_dir_merge_list switches
 tts: !include_dir_merge_list tts
 zone: !include_dir_merge_list zones
 weblink: !include_dir_merge_named weblinks
+
+# Testing flic buttons as binary_sensors
+binary_sensor:
+  platform: flic
+  
