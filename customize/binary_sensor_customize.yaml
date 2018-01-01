@@ -18,3 +18,6 @@
       friendly_name: Backyard Motion
       device_class: motion
       icon: mdi:run
+    binary_sensor.flic_80e4da728fb6:
+      friendly_name: Tim Bed Flic
+      icon: mdi:arrow-collapse-down
