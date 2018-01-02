@@ -1,0 +1,6 @@
+- alias: "Tim Bedside Flix"
+  trigger:
+    platform: state
+    entity_id: binary_sensor.flic_80e4da728fb6
+  action:
+    service: script.tim_bedside_flic
