@@ -1,5 +1,0 @@
-alias: "Tim Bedside Flic"
-sequence:
-  - service: light.toggle
-    data:
-      entity_id: light.lifx_tim
