@@ -6,4 +6,4 @@
   action:
     service: notify.twitter
     data:
-      message: "My download speed on @foxtel ADSL is currently {{ states('sensor.speedtest_download') }} Mbit/s No @nbn_australia in Sunnybank QLD 4109 #NBNFail"
+      message: "My download speed on @telstra ADSL is currently {{ states('sensor.speedtest_download') }} Mbit/s No @nbn_australia in Sunnybank QLD 4109 #NBNFail"
