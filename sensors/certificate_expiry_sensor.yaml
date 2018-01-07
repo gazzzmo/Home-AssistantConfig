@@ -1,2 +1,9 @@
 - platform: cert_expiry
-  host: remote.howells.online
+  host: !secret hass_host
+  name: "Hass SSL Cert"
+- platform: cert_expiry
+  host: !secret cams_host
+  name: "Cams SSL Cert"
+- platform: cert_expiry
+  host: !secret unifi_host
+  name: "Unifi SSL Cert"
