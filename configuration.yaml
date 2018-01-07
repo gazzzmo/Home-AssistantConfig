@@ -18,7 +18,7 @@ history:
 logbook:
 # Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 logger:
-  default: warn
+  default: debug
 mqtt:
 recorder:
 sun:
