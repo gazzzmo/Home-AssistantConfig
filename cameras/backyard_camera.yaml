@@ -3,5 +3,4 @@
   mjpeg_url: !secret backyard_camera_url
   username:  !secret blueiris_username
   password:  !secret blueiris_password
-  authentication: digest
-  
+  authentication: basic
