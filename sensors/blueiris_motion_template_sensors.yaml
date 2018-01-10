@@ -1,0 +1,16 @@
+  - platform: template
+    sensors:
+      motion_indoor_camera_mediaroom:
+        friendly_name: 'Media Room Motion'
+        value_template: >-
+          {% if states.binary_sensor.blue_iris_mediaroom %}
+            {% if is_state('binary_sensor.blue_iris_mediaroom', 'on') %}
+              On
+            {% elif is_state('binary_sensor.blue_iris_mediaroom', 'off') %}
+              Off
+            {% else %}
+              {{ states('binary_sensor.blue_iris_mediaroom') }}
+            {% endif %}
+          {% else %}
+            Off
+          {% endif %}
