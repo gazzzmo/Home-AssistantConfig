@@ -1,3 +1,7 @@
 - platform: mjpeg 
   name: "Garage Camera"
   mjpeg_url: !secret garage_camera_url
+  still_image_url: !secret garage_image_url
+  username:  !secret blueiris_username
+  password:  !secret blueiris_password
+  authentication: basic
