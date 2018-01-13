@@ -28,6 +28,11 @@ wemo:
 zwave:
   usb_path: /dev/ttyACM0
 #  config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
+influxdb:
+  host: 192.168.1.226
+  database: homeassistant
+  tags:
+    source: hass
 
 # Includes These Configurations
 automation: !include_dir_merge_list automations
