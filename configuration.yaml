@@ -9,6 +9,7 @@ homeassistant:
   customize: !include_dir_merge_named customize
 
 # Enable These Components
+cloud:
 config:
 conversation:
 discovery:
