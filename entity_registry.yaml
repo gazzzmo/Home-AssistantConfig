@@ -1,0 +1,69 @@
+light.lifx_lounge_room:
+  platform: lifx
+  unique_id: d0:73:d5:12:dc:fd
+light.lifx_parents_bedroom:
+  platform: lifx
+  unique_id: d0:73:d5:12:88:c8
+light.lifx_jess:
+  platform: lifx
+  unique_id: d0:73:d5:12:e2:81
+light.lifx_tim:
+  platform: lifx
+  unique_id: d0:73:d5:12:e0:b6
+light.lifx_office:
+  platform: lifx
+  unique_id: d0:73:d5:12:da:50
+light.lifx_garage:
+  platform: lifx
+  unique_id: d0:73:d5:12:b3:8a
+sensor.gareth_iphone_battery_level:
+  platform: ios
+  unique_id: level_garethiphone
+sensor.gareth_iphone_battery_state:
+  platform: ios
+  unique_id: state_garethiphone
+binary_sensor.aeotec_zw100_multisensor_6_sensor:
+  platform: zwave
+  unique_id: 7-72057594160349184
+sensor.aeotec_zw100_multisensor_6_temperature:
+  platform: zwave
+  unique_id: 7-72057594160365586
+sensor.aeotec_zw100_multisensor_6_luminance:
+  platform: zwave
+  unique_id: 7-72057594160365618
+sensor.aeotec_zw100_multisensor_6_relative_humidity:
+  platform: zwave
+  unique_id: 7-72057594160365650
+sensor.aeotec_zw100_multisensor_6_ultraviolet:
+  platform: zwave
+  unique_id: 7-72057594160366002
+sensor.aeotec_zw100_multisensor_6_alarm_type:
+  platform: zwave
+  unique_id: 7-72057594161414145
+sensor.aeotec_zw100_multisensor_6_alarm_level:
+  platform: zwave
+  unique_id: 7-72057594161414161
+sensor.aeotec_zw100_multisensor_6_sourcenodeid:
+  platform: zwave
+  unique_id: 7-72057594161414177
+sensor.aeotec_zw100_multisensor_6_burglar:
+  platform: zwave
+  unique_id: 7-72057594161414305
+media_player.lounge:
+  platform: sonos
+  unique_id: RINCON_000E58B36ABA01400
+media_player.apple_tv:
+  platform: apple_tv
+  unique_id: 92c9fdae8bff1f83a2a1c7daa3c8aa5e9ea29da1eb4d3c76f2eeb8955dd166f6
+remote.apple_tv:
+  platform: apple_tv
+  unique_id: 92c9fdae8bff1f83a2a1c7daa3c8aa5e9ea29da1eb4d3c76f2eeb8955dd166f6
+media_player.garage:
+  platform: sonos
+  unique_id: RINCON_949F3E73840801400
+media_player.terrace:
+  platform: sonos
+  unique_id: RINCON_000E588459DE01400
+light.parents_bedhead:
+  platform: hue
+  unique_id: 00:17:88:01:01:21:fc:38-0b
