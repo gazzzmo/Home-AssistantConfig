@@ -16,6 +16,8 @@ discovery:
 frontend:
 # hassio:
 history:
+homekit:
+  pincode: !secret homekit_pincode
 logbook:
 # Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 logger:
