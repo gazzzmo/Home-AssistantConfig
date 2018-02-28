@@ -2,6 +2,6 @@
   name: "Backyard Camera"
   mjpeg_url: !secret backyard_camera_url
   still_image_url: !secret backyard_image_url
-  username:  !secret blueiris_username
-  password:  !secret blueiris_password
-  authentication: basic
+  # username:  !secret blueiris_username
+  # password:  !secret blueiris_password
+  # authentication: basic
