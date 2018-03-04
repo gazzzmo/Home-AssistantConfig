@@ -9,6 +9,7 @@ homeassistant:
   customize: !include_dir_merge_named customize
 
 # Enable These Components
+alexa:
 config:
 cloud:
 conversation:
