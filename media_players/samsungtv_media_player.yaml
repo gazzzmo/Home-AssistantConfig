@@ -4,3 +4,8 @@
   host: 192.168.1.204
   port: 8001
   mac: d8-e0-e1-20-90-be
+- platform: samsungtv
+  name: Jess's TV
+  host: 192.168.1.253
+  port: 8001
+  mac: 68-27-37-09-a2-44
