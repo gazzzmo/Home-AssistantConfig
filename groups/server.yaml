@@ -2,6 +2,6 @@
     name: "Server"
     view: no
     entities:
-      - sensor.systemmonitor_cpu_used
-      - sensor.systemmonitor_disk_used_
-      - sensor.systemmonitor_ram_available
+      - sensor.systemmonitor_processor_use
+      - sensor.systemmonitor_disk_use_percent
+      - sensor.systemmonitor_memory_free
