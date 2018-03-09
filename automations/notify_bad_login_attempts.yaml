@@ -1,4 +1,4 @@
-#  Uses IFTTT to notify me of bad logins.
+#  Uses Home-assistant iOS app to notify me of bad logins.
 
 - alias: Login Failure
   hide_entity: True

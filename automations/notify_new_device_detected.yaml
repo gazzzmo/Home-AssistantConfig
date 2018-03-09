@@ -1,0 +1,12 @@
+#  Uses Home-assistant iOS app to notify me of new device detected on the network.
+
+- alias: New Device Detected
+  hide_entity: True
+  trigger:
+    platform: event
+    event_type: device_tracker_new_device
+
+  action:
+    service: notify.notify
+    data:
+      message: "New device detected on network!"
