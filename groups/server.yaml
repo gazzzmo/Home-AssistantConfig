@@ -3,5 +3,5 @@
     view: no
     entities:
       - sensor.systemmonitor_processor_use
-      - sensor.systemmonitor_disk_use_percent
       - sensor.systemmonitor_memory_free
+      - sensor.systemmonitor_disk_use_percent_
