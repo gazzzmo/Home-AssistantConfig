@@ -2,3 +2,6 @@
   name: "Office Camera"
   mjpeg_url: !secret office_camera_url
   still_image_url: !secret office_image_url
+  username:  !secret blueiris_username
+  password:  !secret blueiris_password
+  authentication: basic  
