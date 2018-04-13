@@ -12,7 +12,7 @@
     - apparent_temperature
     - humidity
     - icon
-    - precip
+    - precip_type
     - precip_probability
     - pressure
     - wind_bearing
