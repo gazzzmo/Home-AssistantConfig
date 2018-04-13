@@ -9,3 +9,11 @@
     - hourly_summary
     - temperature_min
     - temperature_max
+    - apparent_temperature
+    - humidity
+    - icon
+    - precip
+    - precip_probability
+    - pressure
+    - wind_bearing
+    - wind_speed
