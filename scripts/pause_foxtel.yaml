@@ -1,0 +1,10 @@
+alias: "Pause Foxtel"
+sequence:
+  - service: remote.send_command
+    data:
+      entity_id: remote.media_room
+      command:
+        - Pause
+      device: 35606761
+      delay_secs: 0.6
+      
