@@ -1,7 +1,6 @@
 - platform: darksky
   entity_namespace: darksky
   api_key: !secret darksky_api_key
-  name: "Forecast"
   update_interval: "00:15"
   monitored_conditions:
     - summary
