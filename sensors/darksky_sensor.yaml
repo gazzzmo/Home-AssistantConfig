@@ -5,6 +5,7 @@
     - summary
     - daily_summary
     - hourly_summary
+    - tempreature
     - temperature_min
     - temperature_max
     - apparent_temperature
