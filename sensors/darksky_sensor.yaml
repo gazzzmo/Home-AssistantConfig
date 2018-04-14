@@ -11,6 +11,7 @@
     - humidity
     - icon
     - precip_type
+    - precip_intensity
     - precip_probability
     - pressure
     - wind_bearing
