@@ -1,0 +1,5 @@
+alias: "Power Down Mediaroom"
+sequence:
+  - service: remote.turn_off
+    data:
+      entity_id: remote.media_room
