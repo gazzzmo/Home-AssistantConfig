@@ -1,0 +1,23 @@
+alias: "Volume Up"
+sequence:
+  - service: remote.send_command
+    data:
+      entity_id: remote.media_room
+      command:
+        - VolumeUp
+      device: 35606759
+      delay_secs: 0.6
+  - service: remote.send_command
+    data:
+      entity_id: remote.media_room
+      command:
+        - VolumeUp
+      device: 35606759
+      delay_secs: 0.6
+  - service: remote.send_command
+    data:
+      entity_id: remote.media_room
+      command:
+        - VolumeUp
+      device: 35606759
+      delay_secs: 0.6      
