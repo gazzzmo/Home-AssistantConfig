@@ -2,11 +2,14 @@
   trigger:
     - platform: state
       entity_id:  alarm_control_panel.home_alarm
-      to: "pending"
+      to: "armed_home"
+    - platform: state
+      entity_id:  alarm_control_panel.home_alarm
+      to: "armed_away"      
   action:
     - service: notify.notify
       data_template:
-        message: "Warning! The alarm is now being armed!"
+        message: "Warning! The alarm is now armed!"
     - service: media_player.sonos_snapshot
       data_template:
         entity_id: media_player.sonos_lounge
@@ -17,7 +20,7 @@
     - service: tts.google_say
       entity_id: media_player.sonos_lounge
       data:
-        message: "Warning! The alarm is now being armed!"
+        message: "Warning! The alarm is now armed!"
     - delay: 0:0:10
     - service: media_player.sonos_restore
       data_template:
