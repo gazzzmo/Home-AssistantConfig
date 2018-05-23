@@ -9,8 +9,6 @@ homeassistant:
   customize: !include_dir_merge_named customize
 
 # Enable These Components
-alarm_control_panel:
-  - platform: manual
 alexa:
 config:
 cloud:
@@ -43,6 +41,7 @@ influxdb:
     source: hass
 
 # Includes These Configurations
+alarm_control_panel: !include_dir_merge_list alarms
 automation: !include_dir_merge_list automations
 camera: !include_dir_merge_list cameras
 device_tracker: !include_dir_merge_list device_trackers
