@@ -15,7 +15,7 @@
         entity_id: media_player.sonos_lounge
         volume_level: 0.9
     - service: tts.google_say
-      entity_id: media_player.floor
+      entity_id: media_player.sonos_lounge
       data:
         message: "Warning! The alarm is now being armed!"
     - delay: 0:0:10
