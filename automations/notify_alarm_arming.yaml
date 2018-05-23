@@ -1,0 +1,24 @@
+- alias: "Notify Alarm Arming"
+  trigger:
+    - platform: state
+      entity_id:  alarm_control_panel.ha_alarm
+      to: "pending"
+  action:
+    - service: notify.notify
+      data_template:
+        message: "Warning! The alarm is now being armed!"
+    - service: media_player.sonos_snapshot
+      data_template:
+        entity_id: media_player.sonos_lounge
+    - service: media_player.volume_set
+      data_template:
+        entity_id: media_player.sonos_lounge
+        volume_level: 0.9
+    - service: tts.google_say
+      entity_id: media_player.floor
+      data:
+        message: "Warning! The alarm is now being armed!"
+    - delay: 0:0:10
+    - service: media_player.sonos_restore
+      data_template:
+        entity_id: media_player.sonos_lounge
