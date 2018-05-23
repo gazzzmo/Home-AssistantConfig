@@ -2,4 +2,4 @@
     name: "Alarm"
     view: no
     entities:
-      - alarm_control_panel.ha_alarm
+      - alarm_control_panel.home_alarm
