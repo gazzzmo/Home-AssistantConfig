@@ -1,7 +1,7 @@
 - alias: "Notify Alarm Arming"
   trigger:
     - platform: state
-      entity_id:  alarm_control_panel.ha_alarm
+      entity_id:  alarm_control_panel.home_alarm
       to: "pending"
   action:
     - service: notify.notify
