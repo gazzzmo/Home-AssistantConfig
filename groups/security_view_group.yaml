@@ -3,3 +3,4 @@
     view: yes
     entities:
     - group.motion
+    - group.alarm
