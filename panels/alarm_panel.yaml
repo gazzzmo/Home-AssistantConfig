@@ -1,0 +1,5 @@
+  - name: alarm_panel
+    sidebar_title: Alarm
+    sidebar_icon: mdi:security-home
+    url_path: alarm
+    webcomponent_path: /panels/alarm_panel.html
