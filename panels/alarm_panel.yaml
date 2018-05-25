@@ -2,4 +2,4 @@
     sidebar_title: Alarm
     sidebar_icon: mdi:security-home
     url_path: alarm
-    webcomponent_path: /www/alarm_panel.html
+    webcomponent_path: /home/homeassistant/.homeassistant/www/alarm_panel.html
