@@ -1,0 +1,27 @@
+- alias: "Notify Alarm Disrming"
+  trigger:
+    - platform: state
+      entity_id:  alarm_control_panel.home_alarm
+      to: "armed_home"
+    - platform: state
+      entity_id:  alarm_control_panel.home_alarm
+      to: "disarmed"      
+  action:
+    - service: notify.notify
+      data_template:
+        message: "The alarm is now disarmed!"
+    - service: media_player.sonos_snapshot
+      data_template:
+        entity_id: media_player.lounge
+    - service: media_player.volume_set
+      data_template:
+        entity_id: media_player.lounge
+        volume_level: 0.7
+    - service: tts.google_say
+      entity_id: media_player.lounge
+      data:
+        message: "The alarm is now disarmed!"
+    - delay: 0:0:10
+    - service: media_player.sonos_restore
+      data_template:
+        entity_id: media_player.lounge

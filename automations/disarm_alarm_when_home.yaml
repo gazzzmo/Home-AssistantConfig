@@ -1,0 +1,10 @@
+- alias: "Disarm Alarm When Home"
+  trigger:
+    platform: state
+    entity_id: group.phones
+    to: "home"
+  action:
+    service: alarm_control_panel.alarm_arm_away
+    data:
+      entity_id: alarm_control_panel.alarm_disarm
+      code: !secret alarm_code
