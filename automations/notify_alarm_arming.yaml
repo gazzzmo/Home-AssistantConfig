@@ -12,16 +12,16 @@
         message: "Warning! The alarm is now armed!"
     - service: media_player.sonos_snapshot
       data_template:
-        entity_id: media_player.sonos_lounge
+        entity_id: media_player.lounge
     - service: media_player.volume_set
       data_template:
-        entity_id: media_player.sonos_lounge
+        entity_id: media_player.lounge
         volume_level: 0.9
     - service: tts.google_say
-      entity_id: media_player.sonos_lounge
+      entity_id: media_player.lounge
       data:
         message: "Warning! The alarm is now armed!"
     - delay: 0:0:10
     - service: media_player.sonos_restore
       data_template:
-        entity_id: media_player.sonos_lounge
+        entity_id: media_player.lounge
