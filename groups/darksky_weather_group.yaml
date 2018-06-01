@@ -1,4 +1,4 @@
-  weather_forecast:
+  weather_darksky:
     name: "Darksky Weather"
     view: no
     entities:
