@@ -1,0 +1,5 @@
+- platform: mqtt
+  name: "Media Room"
+  command_topic: cbus/write/pi/56/17/state
+  brightness_state_topic: cbus/read/pi/56/17/level
+  state_topic: cbus/read/pi/56/17/state
