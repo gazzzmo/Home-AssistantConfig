@@ -53,7 +53,7 @@ http: !include ./http/http.yaml
 light: !include_dir_merge_list lights
 media_player: !include_dir_merge_list media_players
 notify: !include_dir_merge_list notifiers
-panel: !include_dir_merge_list panels
+#panel: !include_dir_merge_list panels
 remote: !include_dir_merge_list remotes
 scene: !include_dir_merge_list scenes
 script: !include_dir_named scripts
