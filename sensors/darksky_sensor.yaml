@@ -6,8 +6,8 @@
     - daily_summary
     - hourly_summary
     - temperature
-    - temperature_min
-    - temperature_max
+    - temperature_low
+    - temperature_high
     - apparent_temperature
     - humidity
     - icon
