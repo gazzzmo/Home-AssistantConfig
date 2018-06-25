@@ -1,3 +1,0 @@
-# Sonos
-- platform: sonos
-  entity_namespace: sonos
