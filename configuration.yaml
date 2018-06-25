@@ -34,14 +34,6 @@ ios: !include ./ios/ios.yaml
 wemo:
 zwave:
   usb_path: /dev/ttyACM0
-#  config_path: /srv/homeassistant/src/python-openzwave/openzwave/config
-influxdb:
-  host: 192.168.1.226
-  database: home_assistant
-  username: home-assistant
-  password: password
-  tags:
-    source: hass
 
 # Includes These Configurations
 alarm_control_panel: !include_dir_merge_list alarms
@@ -53,7 +45,6 @@ http: !include ./http/http.yaml
 light: !include_dir_merge_list lights
 media_player: !include_dir_merge_list media_players
 notify: !include_dir_merge_list notifiers
-#panel: !include_dir_merge_list panels
 remote: !include_dir_merge_list remotes
 scene: !include_dir_merge_list scenes
 script: !include_dir_named scripts
