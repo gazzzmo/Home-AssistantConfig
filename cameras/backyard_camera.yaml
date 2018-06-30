@@ -4,4 +4,4 @@
   still_image_url: !secret backyard_image_url
   username:  !secret blueiris_username
   password:  !secret blueiris_password
-  authentication: basic
+  authentication: digest
