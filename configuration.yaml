@@ -25,6 +25,8 @@ logger:
   default: warn
 mqtt:
   broker: 192.168.1.217
+  username: mqtt
+  password: mqtt
   port: 1884
   client_id: HASS
 recorder:
