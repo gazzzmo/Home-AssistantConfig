@@ -3,4 +3,5 @@
   host: !secret lounge_camera_ip
   username:  !secret onvif_username
   password:  !secret onvif_password
+  profile: videoMain
   port: 554
