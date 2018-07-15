@@ -1,7 +1,6 @@
-- platform: mjpeg 
+- platform: onvif
   name: "Lounge Camera"
-  mjpeg_url: !secret lounge_camera_url
-  still_image_url: !secret lounge_image_url
-  username:  !secret blueiris_username
-  password:  !secret blueiris_password
-  authentication: basic
+  host: !secret lounge_camera_ip
+  username:  !secret onvif_username
+  password:  !secret onvif_password
+  port: 554
