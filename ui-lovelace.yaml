@@ -24,8 +24,7 @@ views:
     - type: picture-glance
       title: Lounge Room
       image:
-      navigation_path: /lovelace/lounge_room
-      camera_image: 
+      camera_image: camera.lounge_camera
       entities:
         - camera.lounge_camera
         - binary_sensor.blue_iris_lounge
