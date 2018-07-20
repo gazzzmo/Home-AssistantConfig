@@ -23,6 +23,9 @@ logbook:
 # Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 logger:
   default: warn
+  logs:
+    homeassistant.components.recorder: debug
+
 mqtt:
   broker: 192.168.1.217
   username: mqtt
