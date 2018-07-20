@@ -26,6 +26,7 @@ logger:
   logs:
     homeassistant.components.recorder: debug
     homeassistant.components.logger: debug
+    homeassistant.components.logbook: debug
 
 mqtt:
   broker: 192.168.1.217
