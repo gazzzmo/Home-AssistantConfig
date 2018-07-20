@@ -25,6 +25,7 @@ logger:
   default: warn
   logs:
     homeassistant.components.recorder: debug
+    homeassistant.components.logger: debug
 
 mqtt:
   broker: 192.168.1.217
