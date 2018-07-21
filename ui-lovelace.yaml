@@ -5,6 +5,10 @@ resources:
     type: js
   - url: /local/gauge-card.js?v=1
     type: js
+  - url: /local/custom_ui/weather-card.js
+    type: js
+
+title: Home Assistant
 
 name: Gazzzmo
 views:
@@ -32,3 +36,10 @@ views:
         - media_player.lounge_tv
     - type: weather-forecast
       entity: weather.bom_sunnybank
+    - icon: mdi:weather-cloudy
+      id: weather
+      title: Weather
+      cards:
+        - type: "custom:weather-card"
+          entity_weather: weather.bom_sunnybank
+          entity_sun: sun.sun
