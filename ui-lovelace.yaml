@@ -34,12 +34,6 @@ views:
         - binary_sensor.blue_iris_lounge
         - light.lifx_lounge_room
         - media_player.lounge_tv
-    - type: weather-forecast
-      entity: weather.bom_sunnybank
-    - icon: mdi:weather-cloudy
-      id: weather
-      title: Weather
-      cards:
-        - type: "custom:weather-card"
-          entity_weather: weather.bom_sunnybank
-          entity_sun: sun.sun
+    - type: "custom:weather-card"
+      entity_weather: weather.bom_sunnybank
+      entity_sun: sun.sun
