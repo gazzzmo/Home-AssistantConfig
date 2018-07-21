@@ -41,7 +41,7 @@ ios: !include ./ios/ios.yaml
 weather:
   - platform: bom
     name: BOM weather
-    station: 040211
+    station: IDQ60801.94575
 wemo:
 zwave:
   usb_path: /dev/ttyACM0
