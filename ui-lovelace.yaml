@@ -30,3 +30,5 @@ views:
         - binary_sensor.blue_iris_lounge
         - light.lifx_lounge_room
         - media_player.lounge_tv
+    - type: weather-forecast
+      entity: weather.bom_sunnybank
