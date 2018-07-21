@@ -40,6 +40,8 @@ updater:
 ios: !include ./ios/ios.yaml
 weather:
   - platform: bom
+    name: BOM weather
+    station: 040211
 wemo:
 zwave:
   usb_path: /dev/ttyACM0
