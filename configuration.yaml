@@ -40,7 +40,7 @@ updater:
 ios: !include ./ios/ios.yaml
 weather:
   - platform: bom
-    name: BOM weather
+    name: Sunnybank
     station: IDQ60801.94575
 wemo:
 zwave:
