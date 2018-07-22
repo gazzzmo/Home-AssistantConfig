@@ -38,8 +38,6 @@ recorder:
 sun:
 updater:
 ios: !include ./ios/ios.yaml
-weather:
-  - platform: yr
 wemo:
 zwave:
   usb_path: /dev/ttyACM0
