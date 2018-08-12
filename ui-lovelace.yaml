@@ -10,8 +10,8 @@ views:
       title: Media Room
       entities: 
         - binary_sensor.blue_iris_mediaroom
-        - remote.media_room,sensor
-        - harmonyhub_mediaroom
+        - remote.media_room
+        - sensor.harmonyhub_mediaroom
         - script.watch_foxtel
         - script.play_xbox
         - script.watch_chromecast
