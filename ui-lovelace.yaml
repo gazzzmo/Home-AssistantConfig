@@ -1,13 +1,3 @@
-resources:
-  - url: /local/bignumber-card.js?v=3
-    type: js
-  - url: /local/monster-card.js?v=3
-    type: js
-  - url: /local/gauge-card.js?v=1
-    type: js
-  - url: /local/custom_ui/weather-card.js
-    type: js
-
 title: Home Assistant
 
 name: Gazzzmo
@@ -16,24 +6,14 @@ views:
   title: Home
   id: home
   cards:
-    - type: picture-glance
+    - type: picture_glance
       title: Media Room
-      image:
-      camera_image: camera.mediaroom_camera
-      entities:
-        - camera.mediaroom_camera
+      entities: 
         - binary_sensor.blue_iris_mediaroom
-        - light.lifx_media_room_a
-        - light.lifx_media_room_b
-    - type: picture-glance
-      title: Lounge Room
-      image:
-      camera_image: camera.lounge_camera
-      entities:
-        - camera.lounge_camera
-        - binary_sensor.blue_iris_lounge
-        - light.lifx_lounge_room
-        - media_player.lounge_tv
-    - type: "custom:weather-card"
-      entity_weather: weather.bom_sunnybank
-      entity_sun: sun.sun
+        - remote.media_room,sensor
+        - harmonyhub_mediaroom
+        - script.watch_foxtel
+        - script.play_xbox
+        - script.watch_chromecast
+        - script.watch_dvd
+      camera_image: camera.mediaroom_camera
