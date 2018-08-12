@@ -6,7 +6,7 @@ views:
   title: Home
   id: home
   cards:
-    - type: picture_glance
+    - type: picture-glance
       title: Media Room
       entities: 
         - binary_sensor.blue_iris_mediaroom
