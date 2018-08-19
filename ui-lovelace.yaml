@@ -43,3 +43,24 @@ views:
 
     - type: weather-forecast
       entity: weather.bom_brisbane
+
+    - type: picture-entity
+      entity: camera.backyard_camera
+      name: Backyard
+
+    - type: picture-entity
+      entity: camera.garage_camera
+      name: Garage
+
+    - type: picture-entity
+      entity: camera.lounge_camera
+      name: Lounge Room
+
+    - type: picture-entity
+      entity: camera.mediaroom_camera
+      name: Media Room
+
+    - type: picture-entity
+      entity: camera.office_camera
+      name: Front Door
+      
