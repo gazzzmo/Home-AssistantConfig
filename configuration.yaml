@@ -34,6 +34,7 @@ mqtt:
   password: mqtt
   port: 1884
   client_id: HASS
+  
 recorder:
 sun:
 updater:
@@ -50,6 +51,7 @@ device_tracker: !include_dir_merge_list device_trackers
 group: !include_dir_merge_named groups
 http: !include ./http/http.yaml
 light: !include_dir_merge_list lights
+lock: !include_dir_merge_list locks
 media_player: !include_dir_merge_list media_players
 notify: !include_dir_merge_list notifiers
 remote: !include_dir_merge_list remotes
