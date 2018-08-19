@@ -8,3 +8,14 @@
   availability_topic: "home/doors/status"
   payload_available: "running"
   payload_not_available: "dead"
+
+- platform: mqtt
+  name: Garagedoor
+  command_topic: "home/doors/output/garagedoor/set_on_ms"
+  payload_unlock: "5000"
+  optimistic: true
+  qos: 1
+  retain: false
+  availability_topic: "home/doors/status"
+  payload_available: "running"
+  payload_not_available: "dead"
