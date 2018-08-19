@@ -6,6 +6,10 @@ views:
   title: Home
   id: home
   cards:
+    - type: glance
+      title: Lights
+      entities:
+        - group.all_lights
     - type: picture-glance
       title: Media Room
       entities: 
