@@ -12,10 +12,14 @@ views:
         - binary_sensor.blue_iris_mediaroom
         - remote.media_room
         - sensor.harmonyhub_mediaroom
-        - script.watch_foxtel
-        - script.play_xbox
-        - script.watch_chromecast
-        - script.watch_dvd
+        - entity: script.watch_foxtel
+          icon: facebook
+        - entity: script.play_xbox
+          icon: xbox
+        - entity: script.watch_chromecast
+          icon: cast
+        - entity: script.watch_dvd
+          icon: disc
       camera_image: camera.mediaroom_camera
 
 - title: Weather
