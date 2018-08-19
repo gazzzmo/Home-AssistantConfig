@@ -44,6 +44,34 @@ views:
     - type: weather-forecast
       entity: weather.bom_brisbane
 
+- icon: mdi:lightbulb
+  title: Lights
+  id: lights
+  cards:
+    - type: glance
+      title: Lights
+      show_state: false
+      entities:
+        - entity: light.lifx_garage
+          tap_action: toggle
+        - entity: light.lifx_jess
+          tap_action: toggle
+        - entity: light.lifx_lounge_room
+          tap_action: toggle
+        - entity: light.media_room
+          tap_action: toggle
+        - entity: light.lifx_media_room_a
+          tap_action: toggle
+        - entity: light.lifx_media_room_b
+          tap_action: toggle
+        - entity: light.lifx_office
+          tap_action: toggle
+        - entity: light.lifx_parents_bedroom
+          tap_action: toggle
+        - entity: light.lifx_tim
+          tap_action: toggle
+
+
 - icon: mdi:cctv
   title: CCTV
   id: cctv
