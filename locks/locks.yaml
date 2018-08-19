@@ -5,3 +5,6 @@
   optimistic: true
   qos: 1
   retain: false
+  availability_topic: "home/doors/status"
+  payload_available: "running"
+  payload_not_available: "dead"
