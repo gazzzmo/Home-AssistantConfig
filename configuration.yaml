@@ -34,11 +34,14 @@ mqtt:
   password: mqtt
   port: 1884
   client_id: HASS
-  
+
 recorder:
 sun:
 updater:
 ios: !include ./ios/ios.yaml
+weather:
+  - platform: bom
+  - station: IDQ60901.94576
 wemo:
 zwave:
   usb_path: /dev/ttyACM0
