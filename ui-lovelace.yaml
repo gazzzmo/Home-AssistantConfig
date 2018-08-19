@@ -2,33 +2,10 @@ title: Home Assistant
 
 name: Gazzzmo
 views:
-- icon: mdi:home
-  title: Home
-  id: home
+- title: Media Room
+  icon: mdi:television
+  id: mediaroom
   cards:
-    - type: glance
-      title: Lights
-      show_state: false
-      entities:
-        - entity: light.lifx_garage
-          tap_action: toggle
-        - entity: light.lifx_jess
-          tap_action: toggle
-        - entity: light.lifx_lounge_room
-          tap_action: toggle
-        - entity: light.media_room
-          tap_action: toggle
-        - entity: light.lifx_media_room_a
-          tap_action: toggle
-        - entity: light.lifx_media_room_b
-          tap_action: toggle
-        - entity: light.lifx_parents_bedroom
-          tap_action: toggle
-        - entity: light.lifx_tim
-          tap_action: toggle
-        - entity: light.lifx_office
-          tap_action: toggle
-
     - type: picture-glance
       title: Media Room
       entities: 
@@ -41,11 +18,15 @@ views:
         - script.watch_dvd
       camera_image: camera.mediaroom_camera
 
+- title: Weather
+  icon: mdi:weather-cloudy
+  id: weather
+  cards:
     - type: weather-forecast
       entity: weather.bom_brisbane
 
-- icon: mdi:lightbulb
-  title: Lights
+- title: Lights
+  icon: mdi:lightbulb
   id: lights
   cards:
     - type: glance
@@ -72,8 +53,8 @@ views:
           tap_action: toggle
 
 
-- icon: mdi:cctv
-  title: CCTV
+- title: CCTV
+  icon: mdi:cctv
   id: cctv
   cards:
     - type: picture-entity
