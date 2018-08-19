@@ -17,3 +17,5 @@ views:
         - script.watch_chromecast
         - script.watch_dvd
       camera_image: camera.mediaroom_camera
+    - type: weather-forecast
+      entity: weather.bom_brisbane
