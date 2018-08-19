@@ -44,6 +44,10 @@ views:
     - type: weather-forecast
       entity: weather.bom_brisbane
 
+- icon: mdi:cctv
+  title: CCTV
+  id: cctv
+  cards:
     - type: picture-entity
       entity: camera.backyard_camera
       name: Backyard
@@ -63,4 +67,3 @@ views:
     - type: picture-entity
       entity: camera.office_camera
       name: Front Door
-      
