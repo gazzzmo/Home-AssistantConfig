@@ -9,7 +9,16 @@ views:
     - type: glance
       title: Lights
       entities:
-        - group.all_lights
+        - light.lifx_garage
+        - light.lifx_jess
+        - light.lifx_lounge_room
+        - light.media_room
+        - light.lifx_media_room_a
+        - light.lifx_media_room_b
+        - light.lifx_parents_bedroom
+        - light.lifx_tim
+        - light.lifx_office
+
     - type: picture-glance
       title: Media Room
       entities: 
@@ -21,5 +30,6 @@ views:
         - script.watch_chromecast
         - script.watch_dvd
       camera_image: camera.mediaroom_camera
+      
     - type: weather-forecast
       entity: weather.bom_brisbane
