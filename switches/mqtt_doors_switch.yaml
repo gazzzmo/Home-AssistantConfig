@@ -1,6 +1,6 @@
 - platform: mqtt
   name: Front Door
-  icon: door-open
+  icon: mdi:door-open
   command_topic: "home/doors/output/frontdoor/set_on_ms"
   payload_on: "5000"
   optimistic: true
@@ -15,7 +15,7 @@
 
 - platform: mqtt
   name: Garage Door
-  icon: garage-open
+  icon: mdi:garage-open
   command_topic: "home/doors/output/garagedoor/set_on_ms"
   payload_on: "5000"
   optimistic: true
