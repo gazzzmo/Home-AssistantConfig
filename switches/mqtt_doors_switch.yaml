@@ -1,8 +1,11 @@
 - platform: mqtt
-  name: Frontdoor
+  name: Front Door
   command_topic: "home/doors/output/frontdoor/set_on_ms"
-  payload_unlock: "5000"
+  payload_on: "5000"
   optimistic: true
+  state_topic: home/doors/output/frontdoor
+  state_on: "ON"
+  state_off: "OFF"
   qos: 1
   retain: false
   availability_topic: "home/doors/status"
@@ -10,10 +13,13 @@
   payload_not_available: "dead"
 
 - platform: mqtt
-  name: Garagedoor
+  name: Garage Door
   command_topic: "home/doors/output/garagedoor/set_on_ms"
-  payload_unlock: "5000"
+  payload_on: "5000"
   optimistic: true
+  state_topic: home/doors/output/garagedoor
+  state_on: "ON"
+  state_off: "OFF"
   qos: 1
   retain: false
   availability_topic: "home/doors/status"
