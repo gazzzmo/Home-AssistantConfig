@@ -2,6 +2,16 @@ title: Home Assistant
 
 name: Gazzzmo
 views:
+- title: Doors
+  icon: mdi:door
+  id: doors
+  cards:
+    - type: glance
+      title: Doors
+      entities:
+        - switch.front_door
+        - switch.garage_door
+
 - title: Media Room
   icon: mdi:television
   id: mediaroom
