@@ -9,8 +9,12 @@ views:
     - type: glance
       title: Doors
       entities:
-        - switch.front_door
-        - switch.garage_door
+        - entity: switch.front_door
+          icon: door
+          tap_action: toggle
+        - entity: switch.garage_door
+          icon: garage
+          tap_action: toggle
 
 - title: Media Room
   icon: mdi:television
