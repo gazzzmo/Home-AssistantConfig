@@ -10,10 +10,10 @@ views:
       title: Doors
       entities:
         - entity: switch.front_door
-          icon: door
+          icon: mdi:door
           tap_action: toggle
         - entity: switch.garage_door
-          icon: garage
+          icon: mdi:garage
           tap_action: toggle
 
 - title: Media Room
@@ -27,13 +27,13 @@ views:
         - remote.media_room
         - sensor.harmonyhub_mediaroom
         - entity: script.watch_foxtel
-          icon: facebook
+          icon: mdi:facebook
         - entity: script.play_xbox
-          icon: xbox
+          icon: mdi:xbox
         - entity: script.watch_chromecast
-          icon: cast
+          icon: mdi:cast
         - entity: script.watch_dvd
-          icon: disc
+          icon: mdi:disc
       camera_image: camera.mediaroom_camera
 
 - title: Weather
