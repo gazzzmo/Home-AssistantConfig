@@ -1,5 +1,9 @@
 title: Home Assistant
 
+resources:
+  - url: /local/gauge-card.js?v=1
+    type: js
+
 name: Gazzzmo
 views:
 - title: Doors
@@ -42,6 +46,11 @@ views:
   cards:
     - type: weather-forecast
       entity: weather.bom_brisbane
+    - type: custom:gauge-card
+      title: Temperature
+      entity: sensor.aeotec_zw100_multisensor_6_temperature
+      min: 0
+      max: 40
 
 - title: Lights
   icon: mdi:lightbulb
