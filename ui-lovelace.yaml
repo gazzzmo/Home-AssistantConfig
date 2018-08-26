@@ -60,7 +60,7 @@ views:
       entities:
         - entity: sensor.aeotec_zw100_multisensor_6_temperature
           name: Temperature
-          
+
 - title: Lights
   icon: mdi:lightbulb
   id: lights
@@ -112,3 +112,15 @@ views:
     - type: picture-entity
       entity: camera.office_camera
       name: Front Door
+
+- title: Map
+  icon: mdi:map
+  id: map
+  cards:
+    - type: map
+      entities:
+        - device_tracker.garethiphone,
+        - device_tracker.mandyiphone
+        - device_tracker.timiphone
+        - device_tracker.jessicasiphone
+        
