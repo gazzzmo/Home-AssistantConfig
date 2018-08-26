@@ -56,7 +56,11 @@ views:
       entity: sensor.aeotec_zw100_multisensor_6_relative_humidity
       min: 0
       max: 40
-
+    - type: history-graph
+      entities:
+        - entity: sensor.aeotec_zw100_multisensor_6_temperature
+          name: Temperature
+          
 - title: Lights
   icon: mdi:lightbulb
   id: lights
