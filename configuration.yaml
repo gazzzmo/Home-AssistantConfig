@@ -17,19 +17,17 @@ cloud:
 conversation:
 discovery:
 frontend:
-# hassio:
+google:
+  client_id: google_clientid
+  client_secret: google_clientsecret
 history:
-# homekit:
-#   pincode: !secret homekit_pincode
 logbook:
-# Log Severities: notset, debug, info, warn, warning, error, fatal, critical
 logger:
   default: warn
   logs:
     homeassistant.components.recorder: debug
     homeassistant.components.logger: debug
     homeassistant.components.logbook: debug
-
 mqtt:
   broker: 192.168.1.217
   username: mqtt
@@ -54,6 +52,7 @@ automation: !include_dir_merge_list automations
 binary_sensor: !include_dir_merge_list binary_sensors
 camera: !include_dir_merge_list cameras
 device_tracker: !include_dir_merge_list device_trackers
+google_calendar: !include_dir_merge_list google_calendars
 group: !include_dir_merge_named groups
 http: !include ./http/http.yaml
 light: !include_dir_merge_list lights

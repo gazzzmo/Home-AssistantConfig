@@ -1,0 +1,5 @@
+- cal_id: "ndgl48oj1igqqe57mtrtciek3o@group.calendar.google.com"
+  entities:
+  - device_id: google
+    name: Google Calendar
+    track: true
