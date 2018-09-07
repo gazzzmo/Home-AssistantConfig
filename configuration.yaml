@@ -18,8 +18,8 @@ conversation:
 discovery:
 frontend:
 google:
-  client_id: google_clientid
-  client_secret: google_clientsecret
+  client_id: !secret google_clientid
+  client_secret: !secret google_clientsecret
 history:
 logbook:
 logger:
