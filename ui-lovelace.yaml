@@ -20,7 +20,7 @@ views:
       entity: light.lifx_garage
       icon: mdi:garage
       color: auto
-      action: more_info
+      action: toggle
       default_color: rgb(255, 233, 155)
       color_type: card
       name: Garage
@@ -31,7 +31,7 @@ views:
       entity: light.lifx_lounge_room
       color: auto
       icon: mdi:sofa
-      action: more_info
+      action: toggle
       name: Lounge Room
       style:
         - font-size: 12px
@@ -40,7 +40,7 @@ views:
       entity: light.lifx_parents_bedroom
       color: auto
       icon: mdi:human-male-female
-      action: more_info
+      action: toggle
       name: Parents Bedroom
       style:
         - font-size: 12px
@@ -49,7 +49,7 @@ views:
       entity: light.lifx_jess
       icon: mdi:human-female
       color: auto
-      action: more_info
+      action: toggle
       name: Jess
       style:
         - font-size: 12px
