@@ -30,7 +30,7 @@ views:
     - type: "custom:button-card"
       entity: light.lifx_lounge_room
       color: auto
-      icon: mdi:sopha
+      icon: mdi:sofa
       action: more_info
       name: Lounge Room
       style:
