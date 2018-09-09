@@ -21,7 +21,6 @@ views:
       icon: mdi:lamp
       color: auto
       action: toggle
-      color_type: card
       name: Garage
       style:
         - font-size: 12px
