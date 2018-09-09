@@ -5,10 +5,11 @@ resources:
     type: js
   - url: /local/button-card.js
     type: module
+    # Button Card from https://github.com/kuuji/button-card
 
-custom_updater:
-  card_urls: 
-    - https://raw.githubusercontent.com/kuuji/button-card/0.0.2/tracker.json
+#custom_updater:
+#  card_urls: 
+#    - https://raw.githubusercontent.com/kuuji/button-card/0.0.2/tracker.json
 
 name: Gazzzmo
 views:
@@ -16,6 +17,17 @@ views:
   icon: mdi:view-dashboard-variant
   id: dashboard
   cards:
+
+    - type: "custom:button-card"
+      entity: switch.front_door
+      icon: mdi:door
+      color: auto
+      action: toggle
+      name: Unlock Front Door
+      style:
+        - font-size: 12px
+        - font-weight: bold
+
     - type: "custom:button-card"
       entity: light.lifx_garage
       icon: mdi:lamp
