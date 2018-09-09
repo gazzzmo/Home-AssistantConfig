@@ -18,10 +18,9 @@ views:
   cards:
     - type: "custom:button-card"
       entity: light.lifx_garage
-      icon: mdi:garage
+      icon: mdi:lamp
       color: auto
       action: toggle
-      default_color: rgb(255, 233, 155)
       color_type: card
       name: Garage
       style:
@@ -30,7 +29,7 @@ views:
     - type: "custom:button-card"
       entity: light.lifx_lounge_room
       color: auto
-      icon: mdi:sofa
+      icon: mdi:lamp
       action: toggle
       name: Lounge Room
       style:
@@ -39,7 +38,7 @@ views:
     - type: "custom:button-card"
       entity: light.lifx_parents_bedroom
       color: auto
-      icon: mdi:human-male-female
+      icon: mdi:lamp
       action: toggle
       name: Parents Bedroom
       style:
@@ -47,7 +46,7 @@ views:
         - font-weight: bold
     - type: "custom:button-card"
       entity: light.lifx_jess
-      icon: mdi:human-female
+      icon: mdi:lamp
       color: auto
       action: toggle
       name: Jess
