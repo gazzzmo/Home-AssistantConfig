@@ -43,23 +43,28 @@ views:
     - type: "custom:button-card"
       entity: light.lifx_garage
       icon: mdi:lamp
+      color_type: icon
       color: auto
       action: toggle
       name: Garage
       style:
         - font-size: 12px
         - font-weight: bold
+
     - type: "custom:button-card"
       entity: light.lifx_lounge_room
       color: auto
+      color_type: icon
       icon: mdi:lamp
       action: toggle
       name: Lounge Room
       style:
         - font-size: 12px
         - font-weight: bold
+
     - type: "custom:button-card"
       entity: light.lifx_parents_bedroom
+      color_type: icon
       color: auto
       icon: mdi:lamp
       action: toggle
@@ -67,9 +72,11 @@ views:
       style:
         - font-size: 12px
         - font-weight: bold
+
     - type: "custom:button-card"
       entity: light.lifx_jess
       icon: mdi:lamp
+      color_type: icon
       color: auto
       action: toggle
       name: Jess
