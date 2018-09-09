@@ -21,7 +21,8 @@ views:
     - type: "custom:button-card"
       entity: switch.front_door
       icon: mdi:door
-      color: auto
+      color_type: icon
+      color: rgb(0,128,0)
       action: toggle
       name: Unlock Front Door
       style:
@@ -31,7 +32,8 @@ views:
     - type: "custom:button-card"
       entity: switch.garage_door
       icon: mdi:garage
-      color: auto
+      color_type: icon
+      color: rgb(255,0,0)
       action: toggle
       name: Garage Door
       style:
