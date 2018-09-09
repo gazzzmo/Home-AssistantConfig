@@ -29,6 +29,16 @@ views:
         - font-weight: bold
 
     - type: "custom:button-card"
+      entity: switch.garage_door
+      icon: mdi:garage
+      color: auto
+      action: toggle
+      name: Garage Door
+      style:
+        - font-size: 12px
+        - font-weight: bold
+
+    - type: "custom:button-card"
       entity: light.lifx_garage
       icon: mdi:lamp
       color: auto
