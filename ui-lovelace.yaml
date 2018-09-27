@@ -84,6 +84,16 @@ views:
         - font-size: 12px
         - font-weight: bold
 
+    - type: "custom:button-card"
+      entity: group.family
+      icon: mdi:compass-icon
+      color_type: icon
+      color: auto
+      name: Family
+      style:
+        - font-size: 12px
+        - font-weight: bold
+
 - title: Doors
   icon: mdi:door
   id: doors
