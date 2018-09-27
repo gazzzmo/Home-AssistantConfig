@@ -86,7 +86,7 @@ views:
 
     - type: "custom:button-card"
       entity: group.family
-      icon: mdi:compass-icon
+      icon: mdi:compass
       color_type: icon
       color: auto
       name: Family
