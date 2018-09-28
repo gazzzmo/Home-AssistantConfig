@@ -1,0 +1,5 @@
+
+
+  blueiris_profile_1:
+    url: https://192.168.1.21/admin?profile=1
+    method: get
