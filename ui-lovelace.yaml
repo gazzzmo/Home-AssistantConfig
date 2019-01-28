@@ -1,213 +1,115 @@
 title: Home
-
-resources:
-  - url: /local/gauge-card.js?v=1
-    type: js
-  - url: /local/button-card.js
-    type: module
-    # Button Card from https://github.com/kuuji/button-card
-
-#custom_updater:
-#  card_urls: 
-#    - https://raw.githubusercontent.com/kuuji/button-card/0.0.2/tracker.json
-
-name: Gazzzmo
 views:
-- title: Dashboard
-  icon: mdi:view-dashboard-variant
-  id: dashboard
-  cards:
 
-    - type: "custom:button-card"
-      entity: switch.front_door
-      icon: mdi:door
-      color_type: icon
-      color: rgb(0,128,0)
-      action: toggle
-      name: Unlock Front Door
-      style:
-        - font-size: 12px
-        - font-weight: bold
-
-    - type: "custom:button-card"
-      entity: switch.garage_door
-      icon: mdi:garage
-      color_type: icon
-      color: rgb(255,0,0)
-      action: toggle
-      name: Garage Door
-      style:
-        - font-size: 12px
-        - font-weight: bold
-
-    - type: "custom:button-card"
-      entity: light.lifx_garage
-      icon: mdi:lamp
-      color_type: icon
-      color: auto
-      action: toggle
-      name: Garage
-      style:
-        - font-size: 12px
-        - font-weight: bold
-
-    - type: "custom:button-card"
-      entity: light.lifx_lounge_room
-      color: auto
-      color_type: icon
-      icon: mdi:lamp
-      action: toggle
-      name: Lounge Room
-      style:
-        - font-size: 12px
-        - font-weight: bold
-
-    - type: "custom:button-card"
-      entity: light.lifx_parents_bedroom
-      color_type: icon
-      color: auto
-      icon: mdi:lamp
-      action: toggle
-      name: Parents Bedroom
-      style:
-        - font-size: 12px
-        - font-weight: bold
-
-    - type: "custom:button-card"
-      entity: light.lifx_jess
-      icon: mdi:lamp
-      color_type: icon
-      color: auto
-      action: toggle
-      name: Jess
-      style:
-        - font-size: 12px
-        - font-weight: bold
-
-    - type: "custom:button-card"
-      entity: group.family
-      icon: mdi:compass
-      color_type: icon
-      color: auto
-      name: Family
-      style:
-        - font-size: 12px
-        - font-weight: bold
-
-- title: Doors
-  icon: mdi:door
-  id: doors
-  cards:
-    - type: glance
-      title: Doors
-      entities:
-        - entity: switch.front_door
-          icon: mdi:door
-          tap_action: toggle
-        - entity: switch.garage_door
-          icon: mdi:garage
-          tap_action: toggle
-
-- title: Media Room
-  icon: mdi:television
-  id: mediaroom
+- title: Overview
+  path: overview
   cards:
     - type: picture-glance
-      title: Media Room
-      entities: 
-        - binary_sensor.blue_iris_mediaroom
-        - remote.media_room
-        - sensor.harmonyhub_mediaroom
-        - entity: script.watch_foxtel
-          icon: mdi:facebook
-        - entity: script.play_xbox
-          icon: mdi:xbox
-        - entity: script.watch_chromecast
-          icon: mdi:cast
-        - entity: script.watch_dvd
-          icon: mdi:disc
-      camera_image: camera.mediaroom_camera
-
-- title: Weather
-  icon: mdi:weather-cloudy
-  id: weather
-  cards:
-    - type: weather-forecast
-      entity: weather.bom_brisbane
-    - type: custom:gauge-card
-      title: Temperature
-      entity: sensor.aeotec_zw100_multisensor_6_temperature
-      min: 0
-      max: 40
-    - type: custom:gauge-card
-      title: Humidity
-      entity: sensor.aeotec_zw100_multisensor_6_relative_humidity
-      min: 0
-      max: 40
-    - type: history-graph
+      title: Lounge Room
+      camera_image: camera.loungeroom
       entities:
-        - entity: sensor.aeotec_zw100_multisensor_6_temperature
-          name: Temperature
+        binary_sensor.lounge_room_motion
+        media_player.lounge
+        media_player.lounge_cast
+        light.lounge_room
 
-- title: Lights
-  icon: mdi:lightbulb
-  id: lights
+    - type: picture-glance
+      title: Media Room
+      camera_image: camera.mediaroom
+      entities:
+        binary_sensor.media_room_motion
+        remote.harmony_hub
+        sensor.mediaroom_activity
+        light.media_room_left
+        light.media_room_right
+
+    - type: picture-glance
+      title: Front Yard
+      camera_image: camera.frontdoor
+      entitites:
+        binary_sensor.front_door_motion
+        switch.front_door
+
+    - type: picture-glance
+      title: Garage
+      camera_image: camera.garage
+      entities:
+        binary_sensor.garage_motion
+        media_player.garage
+        switch.garage_door
+        light.garage
+
+    - type: picture-glance
+      title: Backyard
+      camera_image: camera.backyard
+      entities:
+        binary_sensor.back_yard_motion
+        media_player.terrace
+        media_player.terrace_chromcast
+
+- title: Tim
+  path: tim
   cards:
     - type: glance
-      title: Lights
-      show_state: false
+      title: Tim Bedroom
       entities:
-        - entity: light.lifx_garage
-          tap_action: toggle
-        - entity: light.lifx_jess
-          tap_action: toggle
-        - entity: light.lifx_lounge_room
-          tap_action: toggle
-        - entity: light.media_room
-          tap_action: toggle
-        - entity: light.lifx_media_room_a
-          tap_action: toggle
-        - entity: light.lifx_media_room_b
-          tap_action: toggle
-        - entity: light.lifx_office
-          tap_action: toggle
-        - entity: light.lifx_parents_bedroom
-          tap_action: toggle
-        - entity: light.lifx_tim
-          tap_action: toggle
-
-
-- title: CCTV
-  icon: mdi:cctv
-  id: cctv
-  cards:
-    - type: picture-entity
-      entity: camera.backyard_camera
-      name: Backyard
-
-    - type: picture-entity
-      entity: camera.garage_camera
-      name: Garage
-
-    - type: picture-entity
-      entity: camera.lounge_camera
-      name: Lounge Room
-
-    - type: picture-entity
-      entity: camera.mediaroom_camera
-      name: Media Room
-
-    - type: picture-entity
-      entity: camera.office_camera
-      name: Front Door
-
-- title: Map
-  icon: mdi:map
-  id: map
-  cards:
-    - type: map
+        fan.tim_bedroom
+        sensor.tim_bedroom_temperature
+        sensor.tim_bedroom_humidity
+        sensor.tim_bedroom_aqi
+        sensor.tim_bedroom_dust
+        media_player.tim_speaker
+        light.tim_bedroom_left
+        light.tim_bedroom_right
+    - type: history-graph
+      title: Temperature
       entities:
-        - device_tracker.garethiphone
-        - device_tracker.mandyiphone
-        - device_tracker.timiphone
-        - device_tracker.jessicasiphone
+        sensor.tim_bedroom_temperature
+
+- title: Jess
+  path: jess
+  cards:
+    - type: glance
+      title: Jess Bedroom
+      entities:
+        fan.jess_bedroom
+        sensor.jess_bedroom_temperature
+        sensor.jess_bedroom_humidity
+        sensor.jess_bedroom_aqi
+        sensor.jess_bedroom_dust
+        light.jess
+
+- title: Parents
+  path: parents
+  cards:
+    - type: glance
+      title: Parents Bedroom
+      entities:
+        media_player.parents_bedroom
+        light.parents_bedhead
+        ight.parents_bedroom_2
+
+- title: Alarm
+  path: alarm
+  cards:
+    - type: alarm-panel
+      title: Alarm
+      eneity: alarm_control_panel.ha_alarm
+
+- title: Weather
+  path: weather
+  cards:
+    - type: weather-forecast
+      title: Weather Forecast
+      entity: weather.weather
+
+- title: Media Room
+  path: mediaroom
+  cards:
+    - type: horizontal-stack
+      cards:
+        - type: picture-entity
+          entity: script.1547214476595
+          image: "/local/Foxtel_Entertainment_Fox8.png"
+          show_name: false
+          show_state: false
