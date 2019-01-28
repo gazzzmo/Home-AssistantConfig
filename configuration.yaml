@@ -1,70 +1,233 @@
-# Platform Configurations
 homeassistant:
-  name: "Home"
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
   latitude: !secret latitude
   longitude: !secret longitude
-  elevation: !secret elevation
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 35
+  # metric for Metric, imperial for Imperial
   unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Australia/Brisbane
-  customize: !include_dir_merge_named customize
+  # Customization file
+  customize: !include customize.yaml
+  # Auth Providers
   auth_providers:
-   - type: homeassistant  
+   - type: legacy_api_password
 
-# Enable These Components
-alexa:
-config:
-cloud:
-conversation:
-discovery:
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
 frontend:
-google:
-  client_id: !secret google_clientid
-  client_secret: !secret google_clientsecret
-history:
-logbook:
-logger:
-  default: warn
-  logs:
-    homeassistant.components.recorder: debug
-    homeassistant.components.logger: debug
-    homeassistant.components.logbook: debug
-mqtt:
-  broker: 192.168.1.217
-  username: mqtt
-  password: mqtt
-  port: 1884
-  client_id: HASS
 
-recorder:
-sun:
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+   base_url: !secret base_url
+   api_password: !secret api_password
+   use_x_forwarded_for: true
+   trusted_proxies: !secret trusted_proxies
+   ip_ban_enabled: true
+   login_attempts_threshold: 5
+     
+# Checks for available updates
 updater:
-ios: !include ./ios/ios.yaml
-weather:
-  - platform: bom
-    station: IDQ60901.94576
-wemo:
-zwave:
-  usb_path: /dev/ttyACM0
+  # Optional, allows Home Assistant developers to focus on popular components.
+  include_used_components: true
 
-# Includes These Configurations
-alarm_control_panel: !include_dir_merge_list alarms
-automation: !include_dir_merge_list automations
-binary_sensor: !include_dir_merge_list binary_sensors
-camera: !include_dir_merge_list cameras
-device_tracker: !include_dir_merge_list device_trackers
-google_calendar: !include_dir_merge_list google_calendars
-group: !include_dir_merge_named groups
-http: !include ./http/http.yaml
-light: !include_dir_merge_list lights
-lock: !include_dir_merge_list locks
-media_player: !include_dir_merge_list media_players
-notify: !include_dir_merge_list notifiers
-remote: !include_dir_merge_list remotes
-rest_command: !include_dir_merge_list rest_commands
-scene: !include_dir_merge_list scenes
-script: !include_dir_named scripts
-sensor: !include_dir_merge_list sensors
-switch: !include_dir_merge_list switches
-tts: !include_dir_merge_list tts
-zone: !include_dir_merge_list zones
-weblink: !include_dir_merge_named weblinks
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# The recorder component is responsible for storing details in a database, which then are handled by the history component.
+recorder:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Sensors
+sensor:
+  - platform: template
+    sensors:
+      mediaroom_activity:
+        friendly_name: "Media Room Activity"
+        value_template: "{{ state_attr('remote.harmony_hub', 'current_activity') }}"
+
+# Zwave (not required for hassio)
+#zwave:
+#  usb_path: /dev/ttyACM0
+  
+# Weather prediction
+weather:
+  - platform: darksky
+    name: Weather
+    api_key: !secret darksky_api_key
+    mode: daily
+
+# Text to speech
+tts:
+  - platform: google
+
+# Cloud
+cloud:
+
+# This platform allows you to detect presence by looking at devices connected to a Ubiquiti Unifi controller.
+device_tracker:
+  - platform: unifi
+    host: !secret unifi_host
+    username: !secret unifi_username
+    password: !secret unifi_password
+    verify_ssl: false
+
+# Cameras
+camera:
+  - platform: ffmpeg
+    input: !secret loungeroom_cam_url
+    name: Loungeroom
+  - platform: ffmpeg
+    input: !secret backyard_cam_url
+    name: Backyard
+  - platform: ffmpeg
+    input: !secret garage_cam_url
+    name: Garage
+  - platform: ffmpeg
+    input: !secret frontdoor_cam_url
+    name: Frontdoor
+  - platform: ffmpeg
+    input: !secret mediaroom_cam_url
+    name: Mediaroom
+
+# Dyson Platform
+dyson:
+  username: !secret dyson_username
+  password: !secret dyson_password
+  language: AU
+  devices:
+    - device_id: ST4-AU-JKA0998A
+      device_ip: 192.168.1.165
+    - device_id: ST4-AU-JKA1233A
+      device_ip: 192.168.1.123
+
+# MQTT Platform
+mqtt:
+  broker: !secret mqtt_broker
+  port: 1884
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  
+# MQTT Motion Sensors from BlueIris
+binary_sensor:
+  - platform: mqtt
+    name: "Front Door Motion"
+    state_topic: "BlueIris/motion/frontdoor/"
+    payload_on: "motion"
+    payload_off: "off"
+    availability_topic: "BlueIris/app"
+    payload_available: "running"
+    payload_not_available: "stopped"
+    qos: 0
+    device_class: motion
+    
+  - platform: mqtt
+    name: "Lounge Room Motion"
+    state_topic: "BlueIris/motion/loungeroom/"
+    payload_on: "motion"
+    payload_off: "off"
+    availability_topic: "BlueIris/app"
+    payload_available: "running"
+    payload_not_available: "stopped"
+    qos: 0
+    device_class: motion
+
+  - platform: mqtt
+    name: "Garage Motion"
+    state_topic: "BlueIris/motion/garage/"
+    payload_on: "motion"
+    payload_off: "off"
+    availability_topic: "BlueIris/app"
+    payload_available: "running"
+    payload_not_available: "stopped"
+    qos: 0
+    device_class: motion
+
+  - platform: mqtt
+    name: "Media Room Motion"
+    state_topic: "BlueIris/motion/mediaroom/"
+    payload_on: "motion"
+    payload_off: "off"
+    availability_topic: "BlueIris/app"
+    payload_available: "running"
+    payload_not_available: "stopped"
+    qos: 0
+    device_class: motion
+
+  - platform: mqtt
+    name: "Back Yard Motion"
+    state_topic: "BlueIris/motion/backyard/"
+    payload_on: "motion"
+    payload_off: "off"
+    availability_topic: "BlueIris/app"
+    payload_available: "running"
+    payload_not_available: "stopped"
+    qos: 0
+    device_class: motion
+
+media_player:
+  - platform: samsungtv
+    host: 192.168.1.204
+    port: 8001
+    mac: "d8:e0:e1:20:90:be"
+
+# MQTT Switches
+switch:
+
+  - platform: mqtt
+    name: "Garage Door"
+    state_topic: "home/doors/output/garagedoor"
+    state_on: "ON"
+    state_off: "OFF"
+    command_topic: "home/doors/output/garagedoor/set_on_ms"
+    payload_on: "500"
+    availability_topic: "home/doors/status"
+    payload_available: "running"
+    payload_not_available: "dead"
+    optimistic: false
+    qos: 0
+    retain: false
+
+  - platform: mqtt
+    name: "Front Door"
+    state_topic: "home/doors/output/frontdoor"
+    state_on: "ON"
+    state_off: "OFF"
+    command_topic: "home/doors/output/frontdoor/set_on_ms"
+    payload_on: "5000"
+    availability_topic: "home/doors/status"
+    payload_available: "running"
+    payload_not_available: "dead"
+    optimistic: false
+    qos: 0
+    retain: false
+
+alarm_control_panel:
+  - platform: manual
+    code: !secret alarm_code
